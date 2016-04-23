@@ -6,24 +6,29 @@ nginx
 wget http://liquidtelecom.dl.sourceforge.net/project/pcre/pcre/8.38/pcre-8.38.tar.bz2
 bzip2 -d pcre-8.38.tar.bz2
 tar xvf pcre-8.38.tar
-./autogen.sh
-sudo ./configure
-sudo make
-sudo make install
+cd pcre-8.38
+./configure
+make
+make install
 
 https://www.nginx.com/resources/wiki/start/topics/tutorials/installoptions/#
 wget http://nginx.org/download/nginx-1.9.14.tar.gz
 tar xzvf nginx-1.9.14.tar.gz && cd nginx-1.9.14
-./configure --prefix=/srv/nginx-1.9.14 \
+./configure --prefix=/srv/nginx \
   --with-cc-opt="-Wno-deprecated-declarations"  \
   --with-http_ssl_module \
   --with-pcre=/srv/pcre-8.38
 
+make && make install
+
 adduser webuser
 passwd -d webuser
-
 /etc/sudoers
 webuser ALL=(ALL) NOPASSWD:ALL
+没成功
+chown -R webuser:webuser /home/webuser/.ssh
+chmod 0700 /home/webuser/.ssh
+chmod 0600 /home/webuser/.ssh/authorized_keys
 
 
 websocket的反向代理
