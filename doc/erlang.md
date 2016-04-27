@@ -20,16 +20,23 @@ erlang性能分析及进程监控工具
 http://blog.sina.com.cn/s/blog_a78beb1f0102vgss.html
 
 etop -node ejabberd@localhost
-/usr/local/lib/erlang/lib/observer-2.1.1/priv/bin/etop -setcookie JHWKZOZFBUYXNYPMXOSA -node ejabberd@localhost
-
+/usr/local/lib/erlang/lib/observer-2.1.1/priv/bin/etop  -pa /usr/local/lib/erlang/lib/observer-2.1.1/ebin/ -setcookie JHWKZOZFBUYXNYPMXOSA -node ejabberd@localhost
 
 以下失败
+```
+erlang:get_cookie().
  ./etop -node 'ejabberd@localhost'  -setcookie  JHWKZOZFBUYXNYPMXOSA -lines 5 -sort memory -interval 50 -accumulate true -tracing on
+```
+
+
+
+ ```
  #!/bin/sh
 
  NAME="etop@testrsa.igrslabdns.com"
  echo erl -sname $NAME -hidden -s etop -s erlang halt -output text $@
  erl -name $NAME -hidden -s etop -s erlang halt -output text $@
+ ```
  ~                                             
 
 http://dev.groupdock.com/2010/10/05/monitoring-ejabberd-with-munin.html
