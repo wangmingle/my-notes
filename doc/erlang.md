@@ -19,16 +19,15 @@ https://www.ejabberd.im/mod_monitor_web
 erlang性能分析及进程监控工具
 http://blog.sina.com.cn/s/blog_a78beb1f0102vgss.html
 
-etop -node ejabberd@localhost
-/usr/local/lib/erlang/lib/observer-2.1.1/priv/bin/etop  -pa /usr/local/lib/erlang/lib/observer-2.1.1/ebin/ -setcookie JHWKZOZFBUYXNYPMXOSA -node ejabberd@localhost
+ETOP:
+shell/etop
+http://erlang.org/doc/man/etop.html
 
 以下失败
 ```
 erlang:get_cookie().
  ./etop -node 'ejabberd@localhost'  -setcookie  JHWKZOZFBUYXNYPMXOSA -lines 5 -sort memory -interval 50 -accumulate true -tracing on
 ```
-
-
 
  ```
  #!/bin/sh
@@ -62,8 +61,8 @@ erl -noshell -s program main -s init stop
 
 
 ejabberd_config:load_file("/home/ejabberd/ejabberd.cfg").
-c(mod_version).
-l(mod_version).
+c(mod_version).  # compile
+l(mod_version).  # reload
 
 erlang:system_info(process_limit).
 processes:max(N). % set processes limits.
