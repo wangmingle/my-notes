@@ -1,11 +1,7 @@
 erlang
 =====
 
-
-
-
-
-
+erlang:iolist_to_binary([<<"foo">>, <<"bar">>,<<"ok">>]).
 
 ## ejabberd
 

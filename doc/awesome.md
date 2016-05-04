@@ -34,6 +34,7 @@ https://github.com/enaqx/awesome-pentest#penetration-testing-resources 入侵检
 https://github.com/okulbilisim/awesome-datascience
 https://github.com/Junnplus/awesome-python-books
 https://github.com/markerikson/react-redux-links
+https://github.com/kciter/awesome-style-guide style集合
 
 https://github.com/Trinea/android-open-project Collect and classify android open source projects 中文
 https://github.com/AutumnsWind/Front-end-tutorial 最全的资源教程-前端涉及的所有知识体系
@@ -87,14 +88,18 @@ https://github.com/airbnb/javascript JavaScript Style Guide
 https://github.com/nnupoor/js_designpatterns
 https://github.com/jessepollak/command js command
 https://github.com/davidedc/Algebrite   Computer Algebra System in Javascript (Coffeescript) http://algebrite.org
+https://github.com/nylas/N1 email客户端
 
 go
 https://github.com/spf13/hugo A Fast and Flexible Static Site Generator built with love in GoLang
 https://github.com/cweill/gotests Generate better Go tests from your source code 好
 https://github.com/avelino/awesome-go
 https://github.com/valyala/quicktemplate Fast, powerful, yet easy to use template engine for Go. Optimized for speed, zero memory allocations in hot paths. Up to 20x faster than html/template
+https://github.com/sanathp/statusok 监控接口是不是ok
+
 其它
 https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
+https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
 BOOK
 http://es6.ruanyifeng.com/#README ECMAScript6 ES6 入门
 https://github.com/amfe/article 淘宝前端团队
