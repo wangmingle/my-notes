@@ -40,6 +40,8 @@ https://github.com/Trinea/android-open-project Collect and classify android open
 https://github.com/AutumnsWind/Front-end-tutorial 最全的资源教程-前端涉及的所有知识体系
 https://github.com/h5bp/Front-end-Developer-Interview-Questions
 https://github.com/micro/micro A microservice toolkit
+https://gist.github.com/gbuesing/865b814d312f46775cda ruby 机器学习
+
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
 js IM,很不错
