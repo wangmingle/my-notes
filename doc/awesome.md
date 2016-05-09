@@ -41,9 +41,11 @@ https://github.com/AutumnsWind/Front-end-tutorial 最全的资源教程-前端�
 https://github.com/h5bp/Front-end-Developer-Interview-Questions
 https://github.com/micro/micro A microservice toolkit
 https://gist.github.com/gbuesing/865b814d312f46775cda ruby 机器学习
+https://github.com/jobbole/awesome-mysql-cn
 
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
+https://github.com/dbohdan/structured-text-tools
 js IM,很不错
 https://github.com/feathersjs/feathers A minimalist real-time JavaScript framework for tomorrow's apps
 https://github.com/iridakos/duckrails
@@ -57,6 +59,7 @@ https://github.com/bboyfeiyu/android-tech-frontier  一个定期翻译国外Andr
 
 data:
 https://github.com/airbnb/caravel可视化数据
+
 python:
 python爬虫:
 https://github.com/wuchangfeng/Python-spider
@@ -84,6 +87,8 @@ https://github.com/presidentbeef/brakeman A static analysis security vulnerabili
 https://github.com/ivantsepp/grub gem包注释
 https://github.com/httprb/http 号称最新的http gem包,用的是c
 https://github.com/ostinelli/apnotic apple push
+https://github.com/bbatsov/rubocop 静态分析 A Ruby static code analyzer, based on the community Ruby style guide.
+https://github.com/github/linguist Language Savant. If your repository's language is being reported incorrectly, send us a pull request!
 
 JS:
 https://github.com/airbnb/javascript JavaScript Style Guide
@@ -103,6 +108,7 @@ https://github.com/sanathp/statusok 监控接口是不是ok
 https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
 BOOK
+https://github.com/phodal/ideabook 一个全栈增长工程师的练手项目集. A Growth Engineering Idea in Action. http://ideabook.phodal.com/
 http://es6.ruanyifeng.com/#README ECMAScript6 ES6 入门
 https://github.com/amfe/article 淘宝前端团队
 https://github.com/vhf/free-programming-books

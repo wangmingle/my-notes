@@ -1,6 +1,15 @@
 mac
 ======
 
+proxy :
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+
+.git/config
+
+[remote "origin"]
+	url = https://github.com/udesk/udesk_webapp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
 
 grep -a -B 10 -A 100 'elasticsearch' /dev/sda1
 
@@ -9,18 +18,13 @@ memory
 es
 sudo elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml  -XX:-UseSuperWord -Xmx50m -Xms10m -d
 
-
 brctl log --wait --shorten
-
 
 AlipayDispatcherService
 
 ```
-
   sudo rm -rf /Library/Application Support/Alipay/
-
   ps -ef|grep -i alipay
-
   sudo kill -9 84476
 ```
 
