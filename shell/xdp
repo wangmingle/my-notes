@@ -1,0 +1,45 @@
+#!/bin/bash
+MY_BRANCH=feature_im_sdk_push
+DEPLOY_BRANCH=qa_feature_im_sdk_push_with_richtext
+MERGE_BRANCHS="master feature/repository_richtext"
+DEPLOY_TARGET=test_udmonkey
+DEPLOY_TARGET2=test_udeskmonkey
+checkout() {
+    git checkout $1 || (checkout $1 && git push -u origin $1)
+}
+
+cd ~/udesk/udesk_im
+if [[ "$1" = 'init' ]]; then
+    set -x \
+    && checkout $MY_BRANCH \
+    && checkout $DEPLOY_BRANCH \
+    && for branch in $MERGE_BRANCHS ; do
+        echo "$DEPLOY_BRANCH merge $branch"
+        checkout $branch
+        checkout $DEPLOY_BRANCH
+        git merge $branch
+    done \
+    && checkout $DEPLOY_BRANCH \
+    && git merge $MY_BRANCH \
+    && git push -u origin $DEPLOY_BRANCH \
+    && bundle exec cap $DEPLOY_TARGET deploy
+    git checkout $MY_BRANCH
+fi
+
+cd ~/udesk/udesk_proj
+if [[ "$1" = 'init' ]]; then
+    set -x \
+    && checkout $MY_BRANCH \
+    && checkout $DEPLOY_BRANCH \
+    && for branch in $MERGE_BRANCHS ; do
+        echo "$DEPLOY_BRANCH merge $branch"
+        checkout $branch
+        checkout $DEPLOY_BRANCH
+        git merge $branch
+    done \
+    && git checkout -B $DEPLOY_BRANCH \
+    && git merge $MY_BRANCH \
+    && git push -u origin $DEPLOY_BRANCH \
+    && bundle exec cap $DEPLOY_TARGET2 deploy
+    git checkout $MY_BRANCH
+fi
