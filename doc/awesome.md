@@ -46,6 +46,8 @@ https://github.com/jobbole/awesome-mysql-cn
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
 https://github.com/dbohdan/structured-text-tools
+https://github.com/donnemartin/gitsome python的git工具,但是好像装不上
+
 js IM,很不错
 https://github.com/feathersjs/feathers A minimalist real-time JavaScript framework for tomorrow's apps
 https://github.com/iridakos/duckrails
