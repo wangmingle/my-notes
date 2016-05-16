@@ -42,6 +42,9 @@ https://github.com/h5bp/Front-end-Developer-Interview-Questions
 https://github.com/micro/micro A microservice toolkit
 https://gist.github.com/gbuesing/865b814d312f46775cda ruby 机器学习
 https://github.com/jobbole/awesome-mysql-cn
+https://github.com/jobbole/awesome-python-cn Python资源大全中文版，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等
+https://github.com/jtoy/awesome-tensorflow TensorFlow - A curated list of dedicated resources http://tensorflow.org
+
 
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
@@ -98,6 +101,11 @@ https://github.com/nnupoor/js_designpatterns
 https://github.com/jessepollak/command js command
 https://github.com/davidedc/Algebrite   Computer Algebra System in Javascript (Coffeescript) http://algebrite.org
 https://github.com/nylas/N1 email客户端
+https://github.com/nlp-compromise/nlp_compromise a cool way to use natural language in javascript http://nlpcompromise.com
+https://github.com/buunguyen/octotree Code tree for GitHub and GitLab
+https://github.com/garbles/why-did-you-update Puts your console on blast when React is making unnecessary updates.
+https://github.com/panteng/wechat-h5-boilerplate 为腾讯微信优化的H5动效模板，帮助你快速构建全屏滚动型H5页面 good
+https://github.com/javierbyte/visual-center This is a tool that will find the visual center of your images. http://javier.xyz/visual-center/
 
 go
 https://github.com/spf13/hugo A Fast and Flexible Static Site Generator built with love in GoLang
@@ -105,10 +113,12 @@ https://github.com/cweill/gotests Generate better Go tests from your source code
 https://github.com/avelino/awesome-go
 https://github.com/valyala/quicktemplate Fast, powerful, yet easy to use template engine for Go. Optimized for speed, zero memory allocations in hot paths. Up to 20x faster than html/template
 https://github.com/sanathp/statusok 监控接口是不是ok
+https://github.com/aacanakin/qb The database toolkit for go http://qb.readme.io
 
 其它
 https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
+https://github.com/getlantern/lantern 翻墙侠
 BOOK
 https://github.com/phodal/ideabook 一个全栈增长工程师的练手项目集. A Growth Engineering Idea in Action. http://ideabook.phodal.com/
 http://es6.ruanyifeng.com/#README ECMAScript6 ES6 入门
