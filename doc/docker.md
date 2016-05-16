@@ -5,6 +5,16 @@ DOCKER
 
 内核之外所有东西的容器
 
+### mac下访问宿主机端口
+
+https://github.com/docker/docker/issues/1143
+
+Docker auto updating /etc/hosts on every container with the host IP, e.g. 172.17.42.1 and calling it for example dockerhost would be a convenient fix.
+I guess for now we are stuck with
+netstat -nr | grep '^0\.0\.0\.0' | awk '{print $2}'
+就是写hosts 然后直接访问就好了
+
+
 ### ubuntu
 
 请安装1.6.0以上版本的Docker。

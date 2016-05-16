@@ -1,6 +1,17 @@
 erlang
 =====
 
+
+case:
+case Condition of
+     Result 1 ->
+           Action 1;      
+     Result 2 ->
+           Action 2;
+     Result 3 ->
+           Action 3
+end
+
 erlang:iolist_to_binary([<<"foo">>, <<"bar">>,<<"ok">>]).
 
 ## ejabberd
