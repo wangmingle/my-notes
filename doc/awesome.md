@@ -35,6 +35,7 @@ https://github.com/okulbilisim/awesome-datascience
 https://github.com/Junnplus/awesome-python-books
 https://github.com/markerikson/react-redux-links
 https://github.com/kciter/awesome-style-guide style集合
+https://github.com/willianjusten/awesome-svg
 
 https://github.com/Trinea/android-open-project Collect and classify android open source projects 中文
 https://github.com/AutumnsWind/Front-end-tutorial 最全的资源教程-前端涉及的所有知识体系
@@ -45,6 +46,9 @@ https://github.com/jobbole/awesome-mysql-cn
 https://github.com/jobbole/awesome-python-cn Python资源大全中文版，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等
 https://github.com/jtoy/awesome-tensorflow TensorFlow - A curated list of dedicated resources http://tensorflow.org
 
+
+机器学习:
+https://github.com/amznlabs/amazon-dsstne
 
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
@@ -61,6 +65,11 @@ https://github.com/browserhtml/browserhtml Experimental Servo browser built in H
 https://github.com/Rochester-NRT/AlphaGo
 https://github.com/taobaofed/demo/tree/gh-pages/react-web  react web
 https://github.com/bboyfeiyu/android-tech-frontier  一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目
+https://github.com/Nickersoft/push.js A compact, cross-browser solution for Javascript desktop notifications http://nickersoft.github.io/push.js
+https://github.com/Selz/plyr A simple HTML5, YouTube and Vimeo player http://plyr.io
+https://github.com/shockone/black-screen A terminal emulator for the 21st century.
+
+https://github.com/parkjs814/AlgorithmVisualizer 算法显示 
 
 data:
 https://github.com/airbnb/caravel可视化数据
@@ -88,13 +97,17 @@ https://github.com/mattbrictson/airbrussh Airbrussh pretties up your SSHKit and 
 https://github.com/shakacode/react_on_rails
 https://github.com/kadirahq/react-storybook
 https://github.com/helpyio/helpy?utm_source=rubyweekly&utm_medium=email Helpy is a modern, "mobile-first" helpdesk application built in Ruby. Features include multi-lingual knowledgebase, community discussions and private tickets integrated with email. http://helpy.io/?source=ghh
+https://github.com/franzejr/best-ruby Ruby Tricks, Idiomatic Ruby, Refactorings and Best Practices http://best-ruby.com
+
 https://github.com/presidentbeef/brakeman A static analysis security vulnerability scanner for Ruby on Rails applications http://brakemanscanner.org/ good
 https://github.com/ivantsepp/grub gem包注释
 https://github.com/httprb/http 号称最新的http gem包,用的是c
 https://github.com/ostinelli/apnotic apple push
 https://github.com/bbatsov/rubocop 静态分析 A Ruby static code analyzer, based on the community Ruby style guide.
 https://github.com/github/linguist Language Savant. If your repository's language is being reported incorrectly, send us a pull request!
-
+https://github.com/cesarferreira/dryrun ry the demo project of any Android Library
+https://github.com/reenhanced/gitreflow git reflow
+https://github.com/shakacode/react_on_rails react_on_rails
 JS:
 https://github.com/airbnb/javascript JavaScript Style Guide
 https://github.com/nnupoor/js_designpatterns
@@ -106,6 +119,7 @@ https://github.com/buunguyen/octotree Code tree for GitHub and GitLab
 https://github.com/garbles/why-did-you-update Puts your console on blast when React is making unnecessary updates.
 https://github.com/panteng/wechat-h5-boilerplate 为腾讯微信优化的H5动效模板，帮助你快速构建全屏滚动型H5页面 good
 https://github.com/javierbyte/visual-center This is a tool that will find the visual center of your images. http://javier.xyz/visual-center/
+https://github.com/GeekyAnts/NativeBase Native
 
 go
 https://github.com/spf13/hugo A Fast and Flexible Static Site Generator built with love in GoLang
