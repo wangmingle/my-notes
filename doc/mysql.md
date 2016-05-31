@@ -1,6 +1,8 @@
 MYSQL
 =====
 
+http://www.cnblogs.com/hustcat/archive/2009/10/28/1591648.html 理解MySQL——索引与优化
+
 apt-get install libmysqlclient-dev
 You can see a log of iCloud Drive transactions being made
 
