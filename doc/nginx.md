@@ -2,6 +2,10 @@ nginx
 =========
 
 ## 编译安装
+deny 114.253.39.254;
+
+set_real_ip_from 100.109.0.0/16;
+deny 114.253.39.254;
 
 wget http://liquidtelecom.dl.sourceforge.net/project/pcre/pcre/8.38/pcre-8.38.tar.bz2
 bzip2 -d pcre-8.38.tar.bz2
@@ -19,6 +23,7 @@ tar xzvf nginx-1.9.14.tar.gz && cd nginx-1.9.14
   --with-http_ssl_module \
   --with-pcre=/srv/pcre-8.38
 
+
 make && make install
 
 adduser webuser
@@ -33,6 +38,25 @@ chmod 0600 /home/webuser/.ssh/authorized_keys
 
 websocket的反向代理
 http://blog.fens.me/nodejs-websocket-nginx/
+http://stackoverflow.com/questions/12102110/nginx-to-reverse-proxy-websockets-and-enable-ssl-wss
+git clone https://github.com/yaoweibin/nginx_tcp_proxy_module.git
+xxxx 好像1.9.14不再支持
+
+
+https://www.nginx.com/resources/admin-guide/tcp-load-balancing/
+./configure --prefix=/srv/nginx-wss \
+  --with-cc-opt="-Wno-deprecated-declarations"  \
+  --with-http_ssl_module \
+  --with-pcre=/srv/pcre-8.38 \
+  --with-stream_ssl_module \
+  --with-stream
+https://knowledge.geotrust.com/support/knowledge-base/index?page=content&id=SO25680
+1. SSL certificate ssl_certificate.crt  end entity certificate, public key certificate, digital certificate or identity certificate
+2. Intermediate CA certificate (i.e. IntermediateCA.crt, also known as chained certificate or signer/issuer of the ssl certificate).
+3. cat ssl_certificate.crt IntermediateCA.crt >> udesk.cn.crt
+4. privateKey.pem
+5. nginx:
+
 
 ```
 
@@ -123,4 +147,87 @@ http {
     }
 }
 
+```
+
+
+后台全站HTTPS设置.md
+
+# 生成证书
+
+## 单独证书
+> 参考: https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04
+
+```bash
+sudo mkdir /etc/nginx/ssl
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./nginx.key -out ./nginx.crt
+```
+
+## 根证书 + 服务器证书
+> 参考: http://blog.creke.net/762.html
+
+```bash
+# 生成CA证书
+sudo openssl genrsa -des3 -out ca.key 2048
+sudo openssl req -new -x509 -days 7305 -key ca.key -out ca.crt
+
+# 用CA签名前的准备
+sudo mkdir -p demoCA/newcerts
+sudo touch demoCA/index.txt
+sudo touch demoCA/serial
+sudo echo 01 > demoCA/serial
+
+# 生成服务器证书(ud.com为例)
+# 注意第三步 Common Name 填写 *.ud.com
+sudo openssl genrsa -des3 -out udesk10.com.pem 1024
+sudo openssl rsa -in udesk10.com.pem -out udesk10.com.key
+sudo openssl req -new -key udesk10.com.pem -out udesk10.com.csr
+
+# Sign
+sudo openssl ca -policy policy_anything -days 1460 -cert ca.crt -keyfile ca.key -in udesk10.com.csr -out udesk10.com.crt
+
+# 创建证书链
+sudo su -c "cat udesk10.com.crt ca.crt > udesk10.com.chained.crt"
+
+# copy到目录
+sudo mkdir /etc/nginx/ssl
+sudo cp udesk10.com.chained.crt /etc/nginx/ssl/nginx.crt
+sudo cp udesk10.com.key /etc/nginx/ssl/nginx.key
+```
+
+## Chrome设置
+
+设置 -> 管理证书 -> 授权中心 -> 导入(ca.crt)
+
+# 配置 Nginx
+
+## 配置虚拟主机
+
+```
+server {
+  listen 80;
+  listen 443 ssl;
+
+  server_name *.ud.com;
+
+  ssl on;
+  ssl_certificate /etc/nginx/ssl/nginx.crt;
+  ssl_certificate_key /etc/nginx/ssl/nginx.key;
+  ...
+}
+```
+
+## 优化
+
+在 http 中加入
+
+```
+# 1m可以存放4000个session
+ssl_session_cache shared:SSL:10m;
+ssl_session_timeout 10m;
+```
+
+在配置https的虚拟主机server{}中加入：
+
+```
+keepalive_timeout 70;
 ```

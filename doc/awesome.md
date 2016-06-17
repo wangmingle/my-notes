@@ -2,6 +2,8 @@ awesome
 ======
 
 ptython 算法练习 https://github.com/openai/gym
+可视
+http://algo-visualizer.jasonpark.me/#path=backtracking/n_queens/n_queens
 
 c fun#模拟黑客. https://github.com/bartobri/no-more-secrets
 
@@ -45,11 +47,11 @@ https://gist.github.com/gbuesing/865b814d312f46775cda ruby 机器学习
 https://github.com/jobbole/awesome-mysql-cn
 https://github.com/jobbole/awesome-python-cn Python资源大全中文版，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等
 https://github.com/jtoy/awesome-tensorflow TensorFlow - A curated list of dedicated resources http://tensorflow.org
-
+https://github.com/fcannizzaro/material-tip material tip
 
 机器学习:
 https://github.com/amznlabs/amazon-dsstne
-
+https://github.com/tensorflow/magenta  学习音乐
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
 https://github.com/dbohdan/structured-text-tools
@@ -69,8 +71,10 @@ https://github.com/Nickersoft/push.js A compact, cross-browser solution for Java
 https://github.com/Selz/plyr A simple HTML5, YouTube and Vimeo player http://plyr.io
 https://github.com/shockone/black-screen A terminal emulator for the 21st century.
 
-https://github.com/parkjs814/AlgorithmVisualizer 算法显示 
+https://github.com/parkjs814/AlgorithmVisualizer 算法显示
+https://github.com/asvd/microlight 高亮库
 
+https://github.com/googlecreativelab/anypixel A web-friendly way for anyone to build unusual displays
 data:
 https://github.com/airbnb/caravel可视化数据
 
@@ -86,7 +90,9 @@ https://github.com/ninenines/cowboy
 https://github.com/Droogans/unmaintainable-code
 java
 https://github.com/sohutv/cachecloud 搜狐视频Redis私有云平台
-Ruby
+https://github.com/twitter/finagle A fault tolerant, protocol-agnostic RPC system http://twitter.github.io/finagle 高性能远程调用
+https://github.com/twitter/util 复用代码
+Ruby:
 https://github.com/airbnb/ruby  style guide
 https://github.com/thoughtbot/administrate
 https://github.com/sharp/china_cities
@@ -98,6 +104,7 @@ https://github.com/shakacode/react_on_rails
 https://github.com/kadirahq/react-storybook
 https://github.com/helpyio/helpy?utm_source=rubyweekly&utm_medium=email Helpy is a modern, "mobile-first" helpdesk application built in Ruby. Features include multi-lingual knowledgebase, community discussions and private tickets integrated with email. http://helpy.io/?source=ghh
 https://github.com/franzejr/best-ruby Ruby Tricks, Idiomatic Ruby, Refactorings and Best Practices http://best-ruby.com
+https://github.com/airbnb/hypernova A service for server-side rendering your JavaScript views
 
 https://github.com/presidentbeef/brakeman A static analysis security vulnerability scanner for Ruby on Rails applications http://brakemanscanner.org/ good
 https://github.com/ivantsepp/grub gem包注释
@@ -108,6 +115,10 @@ https://github.com/github/linguist Language Savant. If your repository's languag
 https://github.com/cesarferreira/dryrun ry the demo project of any Android Library
 https://github.com/reenhanced/gitreflow git reflow
 https://github.com/shakacode/react_on_rails react_on_rails
+https://github.com/apotonick/trailblazer rails的高级框架
+https://github.com/twitter/secureheaders 全安
+https://github.com/twitter/twitter-cldr-rb 国际语言
+https://github.com/danielpclark/faster_path performance
 JS:
 https://github.com/airbnb/javascript JavaScript Style Guide
 https://github.com/nnupoor/js_designpatterns
@@ -120,6 +131,7 @@ https://github.com/garbles/why-did-you-update Puts your console on blast when Re
 https://github.com/panteng/wechat-h5-boilerplate 为腾讯微信优化的H5动效模板，帮助你快速构建全屏滚动型H5页面 good
 https://github.com/javierbyte/visual-center This is a tool that will find the visual center of your images. http://javier.xyz/visual-center/
 https://github.com/GeekyAnts/NativeBase Native
+https://github.com/decosoftware/deco-ide reative ide 用来写react-native
 
 go
 https://github.com/spf13/hugo A Fast and Flexible Static Site Generator built with love in GoLang
@@ -128,6 +140,12 @@ https://github.com/avelino/awesome-go
 https://github.com/valyala/quicktemplate Fast, powerful, yet easy to use template engine for Go. Optimized for speed, zero memory allocations in hot paths. Up to 20x faster than html/template
 https://github.com/sanathp/statusok 监控接口是不是ok
 https://github.com/aacanakin/qb The database toolkit for go http://qb.readme.io
+
+C:
+https://github.com/twitter/fatcache ssd memcache
+
+swift
+https://github.com/AugustRush/Stellar 动图
 
 其它
 https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
@@ -142,6 +160,9 @@ https://github.com/astaxie/build-web-application-with-golang/tree/master/zh gowe
 https://github.com/phodal/growth-ebook
 https://github.com/xitu/gold-miner 掘金翻译计划，翻译掘金上优质的英文文章 http://gold.xitu.io
 https://github.com/Junnplus/awesome-python-books
+https://github.com/hemanth/functional-programming-jargon 函数试编辑的概念
+https://github.com/aosabook/500lines 不多于500行开源项目
+https://github.com/aosabook/aosabook 同上一个组织
 
 https://github.com/ptmt/react-native-desktop
 三步将 React Native 项目运行在 Web 浏览器上面
