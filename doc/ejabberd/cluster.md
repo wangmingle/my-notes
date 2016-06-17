@@ -4,8 +4,10 @@ Clustering
 生产双活:
 1. 先把 现有ejabberd 升级为node
 /etc/hosts
-127.0.0.1 node00
-10.46.161.47 node01
+127.0.0.1 ejabberd
+127.0.0.1 ejabberd2
+10.24.202.252 ejabberd2
+10.24.192.139 ejabberd
 2. node01 备份启动
 3. ./bin/ejabberdctl join_cluster 'ejabberd@node00'
 4. LVS双机配置
@@ -45,7 +47,6 @@ conf/ejabberdctl.cfg:#ERLANG_NODE=ejabberd@node01
 在try上进行登录,看能不能在monkey上看到结果
 在monkey上登录客户,看能不能通讯
 101.201.41.155 im03.tryudesk.com
-
 
 mysql proxy
 
