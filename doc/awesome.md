@@ -8,7 +8,7 @@ http://algo-visualizer.jasonpark.me/#path=backtracking/n_queens/n_queens
 c fun#模拟黑客. https://github.com/bartobri/no-more-secrets
 
 md 学习 https://github.com/shekhargulati/52-technologies-in-2016
-
+https://github.com/nayafia/lemonade-stand opensource挣钱
 
 不错的tips
 https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md 命令行使用
@@ -18,6 +18,8 @@ https://github.com/mortenjust/cleartext-mac  只能用1000个单词的editor
 https://github.com/open-source-society/computer-science
 
 https://github.com/alibaba/macaca 阿里巴巴自动测试方案
+https://github.com/git-tips/tips
+https://github.com/GitAlias/gitalias
 
 awesome
 https://github.com/ty4z2008/Qix Node.Js、Golang、Machine Learning、PostgreSQL、Deep Learning
@@ -48,6 +50,11 @@ https://github.com/jobbole/awesome-mysql-cn
 https://github.com/jobbole/awesome-python-cn Python资源大全中文版，内容包括：Web框架、网络爬虫、网络内容提取、模板引擎、数据库、数据可视化、图片处理、文本处理、自然语言处理、机器学习、日志、代码分析等
 https://github.com/jtoy/awesome-tensorflow TensorFlow - A curated list of dedicated resources http://tensorflow.org
 https://github.com/fcannizzaro/material-tip material tip
+https://github.com/donnemartin/awesome-aws aws
+
+
+Shell
+https://github.com/eklitzke/c.sh shell里写c
 
 机器学习:
 https://github.com/amznlabs/amazon-dsstne
@@ -57,6 +64,7 @@ https://github.com/firehol/netdata Real-time performance monitoring, done right!
 https://github.com/dbohdan/structured-text-tools
 https://github.com/donnemartin/gitsome python的git工具,但是好像装不上
 
+JavaScript
 js IM,很不错
 https://github.com/feathersjs/feathers A minimalist real-time JavaScript framework for tomorrow's apps
 https://github.com/iridakos/duckrails
@@ -75,6 +83,18 @@ https://github.com/parkjs814/AlgorithmVisualizer 算法显示
 https://github.com/asvd/microlight 高亮库
 
 https://github.com/googlecreativelab/anypixel A web-friendly way for anyone to build unusual displays
+https://github.com/a1studmuffin/SpaceshipGenerator 大空船生成器
+https://github.com/fed135/Kalm websocket 加速
+https://github.com/bmeck/UnambiguousJavaScriptGrammar 语法
+https://github.com/tj/react-enroute
+https://github.com/bahmutov/javascript-journey
+相关的文章
+https://glebbahmutov.com/blog/journey-from-procedural-to-reactive-javascript-with-stops/
+
+Android:
+https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe
+IOS:
+https://github.com/yahoo/AppDevKit
 data:
 https://github.com/airbnb/caravel可视化数据
 
@@ -83,7 +103,7 @@ python爬虫:
 https://github.com/wuchangfeng/Python-spider
 https://github.com/carpedm20/variational-text-tensorflow  TensorFlow implementation of Neural Variational Inference for Text Processing
 https://github.com/akshayKMR/hogwatch  find out what's hogging your internet connection
-
+https://github.com/coursera-dl/coursera-dl Script for downloading Coursera.org videos and naming them.
 erlang
 https://github.com/ninenines/cowboy
 杂
@@ -119,7 +139,7 @@ https://github.com/apotonick/trailblazer rails的高级框架
 https://github.com/twitter/secureheaders 全安
 https://github.com/twitter/twitter-cldr-rb 国际语言
 https://github.com/danielpclark/faster_path performance
-JS:
+JS JavaScript:
 https://github.com/airbnb/javascript JavaScript Style Guide
 https://github.com/nnupoor/js_designpatterns
 https://github.com/jessepollak/command js command
@@ -132,7 +152,8 @@ https://github.com/panteng/wechat-h5-boilerplate 为腾讯微信优化的H5动�
 https://github.com/javierbyte/visual-center This is a tool that will find the visual center of your images. http://javier.xyz/visual-center/
 https://github.com/GeekyAnts/NativeBase Native
 https://github.com/decosoftware/deco-ide reative ide 用来写react-native
-
+https://github.com/dvLden/Vidage Your solution to full-screen background video & image combined. https://dvLden.github.io/Vidage/
+https://github.com/benjamn/reify Enable ECMAScript 2015 modules in Node today. No caveats. Full stop
 go
 https://github.com/spf13/hugo A Fast and Flexible Static Site Generator built with love in GoLang
 https://github.com/cweill/gotests Generate better Go tests from your source code 好
@@ -140,6 +161,7 @@ https://github.com/avelino/awesome-go
 https://github.com/valyala/quicktemplate Fast, powerful, yet easy to use template engine for Go. Optimized for speed, zero memory allocations in hot paths. Up to 20x faster than html/template
 https://github.com/sanathp/statusok 监控接口是不是ok
 https://github.com/aacanakin/qb The database toolkit for go http://qb.readme.io
+https://github.com/kataras/iris The fastest web framework for Go in (THIS) earth http://iris-go.com
 
 C:
 https://github.com/twitter/fatcache ssd memcache
