@@ -10,13 +10,13 @@ https://github.com/basho/rebar
 http://stackoverflow.com/questions/6449681/best-practices-conventions-for-writing-erlang-unit-tests-using-eunit
 
 ## tips
-
+```erlang
+io:fwrite("hello, world\n").
 lists:foldl()
 foldl(Function, InitialAcc :: A, Array :: array(Type)) -> B
 Function =
     fun((Index :: array_indx(), Value :: Type, Acc :: A) -> B)
 Fold the elements of the array using the given function and initial accumulator value. The elements are visited in order from the lowest index to the highest. If Function is not a function, the call fails with reason badarg.
-
 
 case:
 case Condition of
@@ -34,7 +34,7 @@ erlang:iolist_to_binary([<<"foo">>, <<"bar">>,<<"ok">>]).
 PacketS = <<"<message from='agent_2_1@im03.tryudesk.com/217367430861347726128075512219489684885722420486696854608' to='customer_236_1@im03.tryudesk.com' type='chat'><received xmlns='urn:xmpp:receipts' id='UDESK_1_msg1463476286450'/></message>">>.
 
 Packet = xml_stream:parse_element(PacketS).
-
+```
 
 ## ejabberd
 
