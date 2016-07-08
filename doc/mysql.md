@@ -3,6 +3,19 @@ MYSQL
 
 http://www.cnblogs.com/hustcat/archive/2009/10/28/1591648.html 理解MySQL——索引与优化
 
+http://www.cnblogs.com/billyxp/p/3548540.html myslq char varchar text 之分
+http://stackoverflow.com/questions/2023481/mysql-large-varchar-vs-text
+```ruby
+def up
+  change_column :im_sessions, :src_url, :string, limit: 2000
+end
+def down
+  change_column :im_sessions, :src_url, :string
+end
+```
+
+http://blog.csdn.net/voidccc/article/details/40077329 Innodb index
+
 apt-get install libmysqlclient-dev
 You can see a log of iCloud Drive transactions being made
 

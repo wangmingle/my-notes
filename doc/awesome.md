@@ -15,6 +15,7 @@ https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md 命令
 https://github.com/wsargent/docker-cheat-sheet/tree/master/zh-cn docker使用
 
 https://github.com/mortenjust/cleartext-mac  只能用1000个单词的editor
+https://github.com/guarinogabriel/Mac-CLI
 https://github.com/open-source-society/computer-science
 
 https://github.com/alibaba/macaca 阿里巴巴自动测试方案
@@ -51,10 +52,11 @@ https://github.com/jobbole/awesome-python-cn Python资源大全中文版，内�
 https://github.com/jtoy/awesome-tensorflow TensorFlow - A curated list of dedicated resources http://tensorflow.org
 https://github.com/fcannizzaro/material-tip material tip
 https://github.com/donnemartin/awesome-aws aws
-
+https://github.com/petehunt/react-howto
 
 Shell
 https://github.com/eklitzke/c.sh shell里写c
+https://github.com/amyhaber/cnki-downloader 文献下载工具
 
 机器学习:
 https://github.com/amznlabs/amazon-dsstne
@@ -65,6 +67,7 @@ https://github.com/dbohdan/structured-text-tools
 https://github.com/donnemartin/gitsome python的git工具,但是好像装不上
 
 JavaScript
+https://github.com/terwanerik/ScrollTrigger
 js IM,很不错
 https://github.com/feathersjs/feathers A minimalist real-time JavaScript framework for tomorrow's apps
 https://github.com/iridakos/duckrails
@@ -91,10 +94,14 @@ https://github.com/bahmutov/javascript-journey
 相关的文章
 https://glebbahmutov.com/blog/journey-from-procedural-to-reactive-javascript-with-stops/
 
+react-native:
+https://github.com/halilb/react-native-textinput-effects
+
 Android:
 https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe
 IOS:
 https://github.com/yahoo/AppDevKit
+https://github.com/alibaba/weex A framework for building Mobile cross-platform UI http://alibaba.github.io/weex
 data:
 https://github.com/airbnb/caravel可视化数据
 
@@ -106,6 +113,7 @@ https://github.com/akshayKMR/hogwatch  find out what's hogging your internet con
 https://github.com/coursera-dl/coursera-dl Script for downloading Coursera.org videos and naming them.
 erlang
 https://github.com/ninenines/cowboy
+https://github.com/2600hz/kazoo an ambitious project to bring cloud-based VoIP and telecommunications to everyone
 杂
 https://github.com/Droogans/unmaintainable-code
 java
@@ -174,6 +182,7 @@ https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-
 https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
 https://github.com/getlantern/lantern 翻墙侠
 BOOK
+
 https://github.com/phodal/ideabook 一个全栈增长工程师的练手项目集. A Growth Engineering Idea in Action. http://ideabook.phodal.com/
 http://es6.ruanyifeng.com/#README ECMAScript6 ES6 入门
 https://github.com/amfe/article 淘宝前端团队
