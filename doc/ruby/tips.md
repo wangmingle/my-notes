@@ -5,6 +5,14 @@ https://github.com/franzejr/best-ruby
 
 ======
 ```ruby
+# rails
+emum :status, {on: 1, off:2}
+status = :on
+save    # status = nil
+self.status = :on
+save    # status = 1
+```
+```ruby
 # class method & instance method
  class Foo
    def self.bar
@@ -20,4 +28,15 @@ Array([1]) #=> [1]
 
 #lock
 REDIS.incr(key) > 1 ? true : (REDIS.expire(key, PUSH_REDUPLICATE_EXPIRE_TIME) && false)
+
+# test valid
+# https://www.sitepoint.com/quick-tip-dry-up-your-model-validations-tests
+def test_should_require_customer_email
+    site = Site.new
+    refute site.valid?
+    refute site.save
+    assert_operator site.errors.count, :>, 0
+    assert site.errors.messages.include?(:customer_email)
+    assert site.errors.messages[:customer_email].include?("can't be blank")
+  end
 ```

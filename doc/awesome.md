@@ -53,10 +53,15 @@ https://github.com/jtoy/awesome-tensorflow TensorFlow - A curated list of dedica
 https://github.com/fcannizzaro/material-tip material tip
 https://github.com/donnemartin/awesome-aws aws
 https://github.com/petehunt/react-howto
+https://github.com/akullpp/awesome-java
+
+live
+https://github.com/ltebean/Live
 
 Shell
 https://github.com/eklitzke/c.sh shell里写c
 https://github.com/amyhaber/cnki-downloader 文献下载工具
+https://github.com/rgcr/m-cli mac tools
 
 机器学习:
 https://github.com/amznlabs/amazon-dsstne
@@ -66,8 +71,15 @@ https://github.com/firehol/netdata Real-time performance monitoring, done right!
 https://github.com/dbohdan/structured-text-tools
 https://github.com/donnemartin/gitsome python的git工具,但是好像装不上
 
-JavaScript
+JavaScript && css
 https://github.com/terwanerik/ScrollTrigger
+https://github.com/metagrover/ES6-for-humans 有中文版
+https://github.com/NamPNQ/You-Dont-Need-Javascript just css
+https://github.com/so-fancy/diff-so-fancy
+https://github.com/gloomyson/SC_Js sc
+https://github.com/ianstormtaylor/slate  A completely customizable framework for building rich text editors in the browser.
+https://github.com/egoist/hack
+
 js IM,很不错
 https://github.com/feathersjs/feathers A minimalist real-time JavaScript framework for tomorrow's apps
 https://github.com/iridakos/duckrails
@@ -99,11 +111,13 @@ https://github.com/halilb/react-native-textinput-effects
 
 Android:
 https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe
+https://github.com/asLody/VirtualApp/blob/master/CHINESE.md
 IOS:
 https://github.com/yahoo/AppDevKit
 https://github.com/alibaba/weex A framework for building Mobile cross-platform UI http://alibaba.github.io/weex
 data:
 https://github.com/airbnb/caravel可视化数据
+https://github.com/dkhamsing/open-source-ios-apps
 
 python:
 python爬虫:
@@ -111,6 +125,7 @@ https://github.com/wuchangfeng/Python-spider
 https://github.com/carpedm20/variational-text-tensorflow  TensorFlow implementation of Neural Variational Inference for Text Processing
 https://github.com/akshayKMR/hogwatch  find out what's hogging your internet connection
 https://github.com/coursera-dl/coursera-dl Script for downloading Coursera.org videos and naming them.
+https://github.com/awslabs/chalice Python Serverless Microframework for AWS
 erlang
 https://github.com/ninenines/cowboy
 https://github.com/2600hz/kazoo an ambitious project to bring cloud-based VoIP and telecommunications to everyone
@@ -120,6 +135,8 @@ java
 https://github.com/sohutv/cachecloud 搜狐视频Redis私有云平台
 https://github.com/twitter/finagle A fault tolerant, protocol-agnostic RPC system http://twitter.github.io/finagle 高性能远程调用
 https://github.com/twitter/util 复用代码
+https://github.com/shekhargulati/99-problems
+
 Ruby:
 https://github.com/airbnb/ruby  style guide
 https://github.com/thoughtbot/administrate

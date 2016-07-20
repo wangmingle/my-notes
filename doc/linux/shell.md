@@ -24,6 +24,11 @@ for branch in $MERGE_BRANCHS
 do
     echo "$DEPLOY_BRANCH merge $branch"
 done
+### vim 自动加可执行:
+```
+vim ~/.vimrc
+au BufWritePost * if getline(1) =~ "^#!" | silent !chmod a+x <afile>
+```
 
 
 if

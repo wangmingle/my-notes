@@ -1,16 +1,27 @@
-ejabberd
+docker && ejabberd
 ========
 
-## erlang
+## 两种语言 两种技术
 
-是一门老语言
+  golang && docker
 
-erlang 1987
-java 1991
+  erlang && ejabberd
 
-函数式/动态语言
+## golang
 
-高并发/多核/小
+### 腹黑的大括号
+
+### 成长的烦恼--GC
+
+http://studygolang.com/articles/7516
+
+### 还可以开发 android/ios
+
+http://www.jianshu.com/p/403aa507935b
+
+### 其它参考
+
+http://www.infoq.com/cn/articles/build-a-container-golang
 
 ## docker
 
@@ -28,14 +39,27 @@ docker in china /
 
   boot2docker.iso
 
-ejabberd
 
-  高并发xmpp
 
-  mod
+## erlang
 
-  ejabberdctl debug
+  是一门老语言
 
-  manesa
+  erlang 1987
+  java 1991
 
-  vhost
+  函数式/动态语言
+
+  高并发/多核/小
+
+## ejabberd
+
+    高并发xmpp
+
+    mod
+
+    ejabberdctl debug
+
+    manesa
+
+    vhost

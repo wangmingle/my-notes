@@ -73,3 +73,6 @@ innodb_log_buffer_size = 8M
 innodb_flush_log_at_trx_commit = 1
 innodb_lock_wait_timeout = 30
 innodb_file_format=barracuda
+
+
+https://www.pureweber.com/article/myisam-vs-innodb/
