@@ -164,6 +164,7 @@ https://github.com/apotonick/trailblazer rails的高级框架
 https://github.com/twitter/secureheaders 全安
 https://github.com/twitter/twitter-cldr-rb 国际语言
 https://github.com/danielpclark/faster_path performance
+https://github.com/bear-metal/tunemygc better gc
 JS JavaScript:
 https://github.com/airbnb/javascript JavaScript Style Guide
 https://github.com/nnupoor/js_designpatterns
