@@ -1,6 +1,16 @@
 tips:
 
 
+```ruby
+class A
+  private # 后的self.foo 并不是私有方法
+  def self.foo
+    puts "foo"
+  end
+end
+A.foo  # foo => ok
+
+```
 https://github.com/franzejr/best-ruby
 
 ======

@@ -66,6 +66,7 @@ https://github.com/rgcr/m-cli mac tools
 机器学习:
 https://github.com/amznlabs/amazon-dsstne
 https://github.com/tensorflow/magenta  学习音乐
+https://github.com/jisaacso/DeepHeart 心脏
 system:
 https://github.com/firehol/netdata Real-time performance monitoring, done right!
 https://github.com/dbohdan/structured-text-tools
@@ -112,6 +113,7 @@ https://github.com/halilb/react-native-textinput-effects
 Android:
 https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe
 https://github.com/asLody/VirtualApp/blob/master/CHINESE.md
+https://github.com/Curzibn/Luban 图片压缩算法
 IOS:
 https://github.com/yahoo/AppDevKit
 https://github.com/alibaba/weex A framework for building Mobile cross-platform UI http://alibaba.github.io/weex
@@ -119,6 +121,11 @@ data:
 https://github.com/airbnb/caravel可视化数据
 https://github.com/dkhamsing/open-source-ios-apps
 
+wire: 加密传输
+https://wire.com
+https://github.com/wireapp/wire
+https://github.com/wireapp/wire-ios
+https://github.com/wireapp/wire-android
 python:
 python爬虫:
 https://github.com/wuchangfeng/Python-spider
@@ -147,11 +154,11 @@ https://github.com/banister/binding_of_caller
 https://github.com/mattbrictson/airbrussh Airbrussh pretties up your SSHKit and Capistrano output
 https://github.com/shakacode/react_on_rails
 https://github.com/kadirahq/react-storybook
-https://github.com/helpyio/helpy?utm_source=rubyweekly&utm_medium=email Helpy is a modern, "mobile-first" helpdesk application built in Ruby. Features include multi-lingual knowledgebase, community discussions and private tickets integrated with email. http://helpy.io/?source=ghh
+https://github.com/helpyio/helpy Helpy is a modern, "mobile-first" helpdesk application built in Ruby. Features include multi-lingual knowledgebase, community discussions and private tickets integrated with email. http://helpy.io/?source=ghh
 https://github.com/franzejr/best-ruby Ruby Tricks, Idiomatic Ruby, Refactorings and Best Practices http://best-ruby.com
 https://github.com/airbnb/hypernova A service for server-side rendering your JavaScript views
+https://github.com/square/shift shift is an application that makes it easy to run online schema migrations for MySQL databases 
 
-https://github.com/presidentbeef/brakeman A static analysis security vulnerability scanner for Ruby on Rails applications http://brakemanscanner.org/ good
 https://github.com/ivantsepp/grub gem包注释
 https://github.com/httprb/http 号称最新的http gem包,用的是c
 https://github.com/ostinelli/apnotic apple push
@@ -188,12 +195,20 @@ https://github.com/valyala/quicktemplate Fast, powerful, yet easy to use templat
 https://github.com/sanathp/statusok 监控接口是不是ok
 https://github.com/aacanakin/qb The database toolkit for go http://qb.readme.io
 https://github.com/kataras/iris The fastest web framework for Go in (THIS) earth http://iris-go.com
+https://github.com/reconquest/orgalorg ssh同步执行
 
 C:
 https://github.com/twitter/fatcache ssd memcache
 
 swift
 https://github.com/AugustRush/Stellar 动图
+
+安全:
+https://github.com/presidentbeef/brakeman A static analysis security vulnerability scanner for Ruby on Rails applications http://brakemanscanner.org/ good
+https://github.com/FallibleInc/security-guide-for-developers checklist
+
+react
+https://github.com/facebookincubator/create-react-app Create React apps with no build configuration.
 
 其它
 https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words

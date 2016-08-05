@@ -3,7 +3,8 @@ git
 =====
 
 ### git 管理
-
+sublime text:
+https://github.com/kemayo/sublime-text-git/wiki
 
 ### git config
   http://stackoverflow.com/questions/23918062/simple-vs-current-push-default-in-git-for-decentralized-workflow

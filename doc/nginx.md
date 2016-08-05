@@ -1,6 +1,10 @@
 nginx
 =========
 
+### ssl
+http://seanlook.com/2015/05/28/nginx-ssl/
+https://blog.phusion.nl/2016/07/27/using-ssl-with-passenger-in-development-on-macos
+
 ## 编译安装
 deny 114.253.39.254;
 

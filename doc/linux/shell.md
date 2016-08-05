@@ -1,8 +1,12 @@
 shell
 ====
 
+sshd_config
+  PasswordAuthentication no
+
 代替
 ```
+
 grep -rl '52698' /usr/local/bin/ratom  | xargs sed -i 's/52698/53698/g'
 
 mac

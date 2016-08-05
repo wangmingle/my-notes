@@ -15,7 +15,7 @@ https://www.nginx.com/resources/admin-guide/tcp-load-balancing/
 sudo ./configure --prefix=/srv/nginx-wss \
   --with-cc-opt="-Wno-deprecated-declarations"  \
   --with-http_ssl_module \
-  --with-pcre=/srv/pcre-8.38 \
+  --with-pcre=/srv/sources/pcre-8.38 \
   --with-stream_ssl_module \
   --with-stream
 sudo make
@@ -148,3 +148,76 @@ ssl_session_timeout 10m;
 ```
 keepalive_timeout 70;
 ```
+
+
+新证书方法:
+
+http://confluence.flyudesk.com/pages/viewpage.action?pageId=11796893
+
+1. 目标
+
+测试环境下使用的 SSL 证书应满足一下条件：
+
+目标	原因
+采用 CA 签名的服务器证书	开发人员只需要在自己的浏览器（或系统中）导入 CA 证书，每次服务器证书变动不需要重新导入
+服务器证书支持多域名（SAN）	所有测试服务器使用相同的 SSL 证书，简化证书管理
+
+2. 生成过程
+
+2.1 修改本地 openssl 配置
+
+以 Ubuntu 系统为例，修改 /etc/ssl/openssl.cnf 文件：
+
+替换 [ req ] 段为
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+
+在 [ v3_req ] 段添加
+subjectAltName = @alt_names
+
+在文件最后新建段，添加所有需要签名的测试服务器域名，注意 *.domain.com 和 domain.com 要分开处理，udesk.dev 为本地开发环境域名（也可加入 ud.com、udesk.local 等）
+[ alt_names ]
+DNS.1 = *.udesk.dev
+DNS.2 = udesk10.com
+DNS.3 = *.udesk10.com
+DNS.4 = udesk11.com
+DNS.5 = *.udesk11.com
+DNS.6 = udesk20.com
+DNS.7 = *.udesk20.com
+DNS.8 = udeskcat.com
+DNS.9 = *.udeskcat.com
+DNS.10 = udeskdog.com
+DNS.11 = *.udeskdog.com
+DNS.12 = udeskmonkey.com
+DNS.13 = *.udeskmonkey.com
+DNS.14 = udesktiger.com
+DNS.15 = *.udesktiger.com
+DNS.16 = tiyanudesk.com
+DNS.17 = *.tiyanudesk.com
+DNS.18 = tryudesk.com
+DNS.19 = *.tryudesk.com
+2.2 创建相关目录
+选择任意目录作为 SSL 证书生成的根目录，然后执行
+$ mkdir -p demoCA/newcerts
+$ touch demoCA/index.txt
+$ touch demoCA/serial
+$ echo 01 > demoCA/serial
+
+2.3 生成 CA 证书
+生成证书时按提示填写即可，CN可以为空
+$ openssl genrsa -des3 -out ca.key 2048
+$ openssl req -new -x509 -days 7305 -key ca.key -out ca.crt
+
+2.4 生成服务器证书
+生成证书时按提示填写，CN填写 udesk.dev（本地开发环境域名）
+
+$ openssl genrsa -des3 -out udesk.pem 2048
+$ openssl rsa -in udesk.pem -out udesk.key
+$ openssl req -new -key udesk.pem -out udesk.csr -config /etc/ssl/openssl.cnf
+
+2.5 签名服务器证书
+$ openssl ca -policy policy_anything -days 1460 -cert ca.crt -keyfile ca.key -in udesk.csr -out udesk.crt -extensions v3_req -extfile /etc/ssl/openssl.cnf
+
+最终生成
+证书：udesk.crt
+密钥：udesk.key
