@@ -157,7 +157,7 @@ https://github.com/kadirahq/react-storybook
 https://github.com/helpyio/helpy Helpy is a modern, "mobile-first" helpdesk application built in Ruby. Features include multi-lingual knowledgebase, community discussions and private tickets integrated with email. http://helpy.io/?source=ghh
 https://github.com/franzejr/best-ruby Ruby Tricks, Idiomatic Ruby, Refactorings and Best Practices http://best-ruby.com
 https://github.com/airbnb/hypernova A service for server-side rendering your JavaScript views
-https://github.com/square/shift shift is an application that makes it easy to run online schema migrations for MySQL databases 
+https://github.com/square/shift shift is an application that makes it easy to run online schema migrations for MySQL databases
 
 https://github.com/ivantsepp/grub gem包注释
 https://github.com/httprb/http 号称最新的http gem包,用的是c

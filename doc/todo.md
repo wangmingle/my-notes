@@ -1,6 +1,11 @@
 TODO
 -----
-*
+
+* selenium-ruby 模拟浏览器
+http://redgreenrepeat.com/2016/07/29/selenium-ruby
+
+
+* https://blog.phusion.nl/2016/08/04/using-rails-5-actioncable-and-rethinkdb-to-build-a-reactive-websocket-app
 
 * http://www.blackbytes.info/2016/06/linux-tools-with-ruby/?utm_source=rubyweekly&utm_medium=email
 
