@@ -1,5 +1,11 @@
 crystal
 -----
+
+
+crystal init lib MyCoolLib
+--cross-compile
+--release
+
 https://github.com/veelenga/awesome-crystal
 
 https://github.com/crystal-lang
