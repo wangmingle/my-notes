@@ -22,3 +22,6 @@ https://github.com/kemayo/sublime-text-git/wiki
 https://github.com/udesk/udesk_proj/compare/hotfix_speedup_api_token?expand=1
 
 https://github.com/udesk/udesk_proj/compare/develop...hotfix_speedup_api_token?expand=1
+
+git tool
+https://github.com/paulirish/git-recent 显示本地分支最后的修改

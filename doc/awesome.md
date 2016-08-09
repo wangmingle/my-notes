@@ -322,6 +322,8 @@ awesome
 
   https://github.com/JuanitoFatas/what-do-you-call-this-in-ruby 怎么读符号
 
+  https://github.com/plum-umd/rdl ruby 类型检查 
+
 ## JS JavaScript:
 
   https://github.com/airbnb/javascript JavaScript Style Guide
