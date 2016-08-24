@@ -1,0 +1,3 @@
+#!/bin/bash
+# cross-compile do't work
+crystal build your_program.cr --cross-compile --target "x86_64-unknown-linux-gnu"
