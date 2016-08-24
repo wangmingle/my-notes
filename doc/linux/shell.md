@@ -45,6 +45,7 @@ grep -rl 'api: http://im03.udesk.cn/' config/property/*.yml | xargs sed -i 's/ap
 mac
 grep -rl 'api: http://im03.udesk.cn/' config/property/*.yml | xargs sed -i '' 's/api\: http\:\/\/im03\.udesk\.cn\//api\: http\:\/\/im03\.udesk\.cn\:5888\//g'
 grep -rl 'api: http://im03.udesk.cn:5888/' config/property/*.yml | xargs sed -i '' 's/api\: http\:\/\/im03\.udesk\.cn\:5888\//api\: http\:\/\/internalim03\.udesk\.cn\:5888\//g'
+grep -rl 'http://v3.faqrobot.org/' config/property/*.yml | xargs sed -i '' 's/http\:\/\/v3.faqrobot.org\//http\:\/\/udesk.faqrobot.org\//g'
 ```
 
 ### 使用im的公司排序

@@ -1,5 +1,13 @@
 TODO
 -----
+* http://brewhouse.io/2016/08/04/sql-in-rails.html
+
+
+* http://www.infoq.com/cn/news/2015/04/micro-service-architecture
+http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service
+
+* https://github.com/alexazhou/VeryNginx VeryNginx is a very powerful and friendly nginx
+这个试一下在测试机上搞一个
 
 * selenium-ruby 模拟浏览器
 http://redgreenrepeat.com/2016/07/29/selenium-ruby
@@ -18,3 +26,12 @@ https://www.icelab.com.au/notes/next-generation-ruby-web-apps-with-dry-rb-rom-rb
 http://dry-rb.org/resources/reddotrubyconf-2016/
 
 * http://www.codelitt.com/blog/intro-setting-up-your-first-docker-container-your-rails-app/?utm_source=rubyweekly&utm_medium=email
+
+
+* https://dockyard.com/blog/2016/08/09/phoenix-channels-vs-rails-action-cable
+
+* http://blog.pawandubey.com/implementing-a-naive-bayes-text-classifier/?utm_source=rubyweekly&utm_medium=email
+
+* https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-minitest 测试过程
+
+* http://blog.sundaycoding.com/blog/2016/08/10/how-to-remove-action-cable-from-a-rails-app/

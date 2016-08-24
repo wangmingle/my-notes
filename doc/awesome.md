@@ -73,7 +73,7 @@ awesome
 
   https://github.com/VoLuong/Awesome-Ubuntu-Linux
 
-
+  https://github.com/Kickball/awesome-selfhosted 自建服务器
 
   https://github.com/Trinea/android-open-project Collect and classify android open source projects 中文
 
@@ -95,11 +95,17 @@ awesome
 
   https://github.com/donnemartin/awesome-aws aws
 
+  https://github.com/jaywcjlove/awesome-mac
+
   https://github.com/petehunt/react-howto
 
   https://github.com/akullpp/awesome-java
 
   https://github.com/mehcode/awesome-atom
+
+  https://github.com/aymericdamien/TopDeepLearning
+
+  https://github.com/VoLuong/Awesome-Linux-Software
 
 ## live
 
@@ -136,6 +142,8 @@ awesome
 
 
 ## JavaScript && css
+
+  https://github.com/danklammer/bytesize-icons
 
   https://github.com/terwanerik/ScrollTrigger
 
@@ -177,11 +185,9 @@ awesome
 
   https://github.com/shockone/black-screen A terminal emulator for the 21st century.
 
-
   https://github.com/parkjs814/AlgorithmVisualizer 算法显示
 
   https://github.com/asvd/microlight 高亮库
-
 
   https://github.com/googlecreativelab/anypixel A web-friendly way for anyone to build unusual displays
 
@@ -194,6 +200,8 @@ awesome
   https://github.com/tj/react-enroute
 
   https://github.com/bahmutov/javascript-journey
+
+  http://www.bootcss.com/p/font-awesome/
 
   相关的文章
 
@@ -211,6 +219,10 @@ awesome
   https://github.com/asLody/VirtualApp/blob/master/CHINESE.md
 
   https://github.com/Curzibn/Luban 图片压缩算法
+
+  https://github.com/Blankj/AndroidUtilCode
+
+  https://github.com/eoinfogarty/Onboarding A beautiful way to introduce users to your app
 
 ## IOS:
 
@@ -322,7 +334,19 @@ awesome
 
   https://github.com/JuanitoFatas/what-do-you-call-this-in-ruby 怎么读符号
 
-  https://github.com/plum-umd/rdl ruby 类型检查 
+  https://github.com/plum-umd/rdl ruby 类型检查
+
+  https://github.com/jazzonmymind/trip.rb real time concurrent tracer for Ruby.
+
+  https://github.com/tsurupin/portfolio A blog and Portfolio CMS built with Rails, React, Redux, Material-UI, CSS Modules
+
+  https://github.com/ssuljic/timed_semaphore
+
+  https://github.com/watir/watir Watir Powered By Selenium http://watir.github.io
+
+  https://github.com/deivid-rodriguez/byebug
+
+  https://github.com/rubysec/bundler-audit 安全 gem 跟踪
 
 ## JS JavaScript:
 
@@ -354,7 +378,16 @@ awesome
 
   https://github.com/benjamn/reify Enable ECMAScript 2015 modules in Node today. No caveats. Full stop
 
+  https://github.com/sourcelair/xterm.js  一个网页上term,这个公司提供在线写node项目...
+  https://www.sourcelair.com/
+
 ## golang
+
+  https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
+
+  https://github.com/iamduo/workq 任务
+
+  https://github.com/anthonynsimon/bild 图片处理算法
 
   https://github.com/spf13/hugo A Fast and Flexible Static Site Generator built with love in GoLang
 
@@ -376,13 +409,21 @@ awesome
 
   https://github.com/mholt/caddy Fast, cross-platform HTTP/2 web server with automatic HTTPS
 
+  https://github.com/fatedier/frp 本地站点到公开的proxy
+
+  https://github.com/kovetskiy/go-fast Compile Go programs 7x faster
+
 ## C:
 
   https://github.com/twitter/fatcache ssd memcache
 
+  https://github.com/alexazhou/VeryNginx VeryNginx is a very powerful and friendly nginx nginx扩展,国人制造
+
 ## swift
 
   https://github.com/AugustRush/Stellar 动图
+
+  https://github.com/krzysztofzablocki/KZFileWatchers 文件变更同步,看起来很厉害的样子
 
 ## 安全:
 
@@ -403,16 +444,21 @@ awesome
 
   https://github.com/acdlite/react-fiber-architecture 文章
 
+  https://github.com/nasa/openmct 火星探测器任务管理
+
+  https://github.com/FormidableLabs/react-music
 
 ## 其它
 
   https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 
-  https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
+
 
   https://github.com/getlantern/lantern 翻墙侠
 
   https://github.com/open-power-workgroup/Hospital
+
+  https://haoel.github.io  科学上网法
 
 BOOK
 
@@ -421,6 +467,8 @@ BOOK
   http://es6.ruanyifeng.com/#README ECMAScript6 ES6 入门
 
   https://github.com/amfe/article 淘宝前端团队
+
+  https://github.com/hedengcheng/tech 阿里何登成
 
   https://github.com/vhf/free-programming-books
 
@@ -443,6 +491,10 @@ BOOK
   三步将 React Native 项目运行在 Web 浏览器上面
 
   https://yq.aliyun.com/articles/8184?&utm_campaign=sys&utm_medium=market&utm_source=edm_email&msctype=email&mscmsgid=114516031700609234&
+
+## GIS
+
+https://github.com/roberdam/Xaddress
 
 
 

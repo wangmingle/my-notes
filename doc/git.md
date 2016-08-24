@@ -25,3 +25,7 @@ https://github.com/udesk/udesk_proj/compare/develop...hotfix_speedup_api_token?e
 
 git tool
 https://github.com/paulirish/git-recent 显示本地分支最后的修改
+
+checkout tag
+
+git checkout -b tag_name tag_name
