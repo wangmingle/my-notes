@@ -35,6 +35,7 @@ sshd_config
 
 ```
 grep -rl '52698' /usr/local/bin/ratom  | xargs sed -i 's/52698/53698/g'
+grep -rl 'stagingpush.udesk.cn' conf/ejabberd.yml  | xargs sed -i 's/stagingpush.udesk.cn/stagingpush.udeskcat.com/g'
 ```
 
 mac
@@ -45,6 +46,9 @@ grep -rl 'api: http://im03.udesk.cn/' config/property/*.yml | xargs sed -i 's/ap
 mac
 grep -rl 'api: http://im03.udesk.cn/' config/property/*.yml | xargs sed -i '' 's/api\: http\:\/\/im03\.udesk\.cn\//api\: http\:\/\/im03\.udesk\.cn\:5888\//g'
 grep -rl 'api: http://im03.udesk.cn:5888/' config/property/*.yml | xargs sed -i '' 's/api\: http\:\/\/im03\.udesk\.cn\:5888\//api\: http\:\/\/internalim03\.udesk\.cn\:5888\//g'
+grep -rl 'http://imdev.udeskmonkey.com:5880/http-bind/' config/property/*.yml | xargs sed -i '' 's/http\:\/\/imdev.udeskmonkey.com\:5880\/http-bind\//http\:\/\/imdev.udeskmonkey.com\/http-bind\//g'
+
+
 grep -rl 'http://v3.faqrobot.org/' config/property/*.yml | xargs sed -i '' 's/http\:\/\/v3.faqrobot.org\//http\:\/\/udesk.faqrobot.org\//g'
 ```
 

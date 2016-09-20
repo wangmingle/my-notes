@@ -29,6 +29,10 @@ http://studygolang.com/articles/7516
 
 http://www.jianshu.com/p/403aa507935b
 
+### 其它
+
+  有一些源是从google的库上来的
+
 ### 其它参考
 
 http://www.infoq.com/cn/articles/build-a-container-golang

@@ -1,5 +1,12 @@
 tips:
 
+```
+# Bad. You will add this gem to the production environment even if you are not using it there
+gem 'rubocop'
+
+# Good
+gem 'rubocop', group: :development
+```
 
 ```ruby
 class A
@@ -27,9 +34,9 @@ save    # status = 1
  class Foo
    def self.bar
      "foo bar"
-   end  
+   end
    delegate :bar, to: 'self.class'
- end  
+ end
 # Hash[ object ] → new_hash
 Hash[%i(web android ios).map { |e| [e,true] }]  #=> { web:true, android: true, ios: true}
 Hash[[:a, :b, :c].map.with_index(0).to_a] # => {:a=>0, :b=>1, :c=>2}

@@ -1,6 +1,5 @@
 awesome
 ======
-
 ## 算法:
 
   https://github.com/openai/gym ptython 算法练习
@@ -16,6 +15,8 @@ awesome
 ## tips
 
   https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md 命令行使用
+
+  https://github.com/helloqingfeng/Awsome-Front-End-learning-resource GitHub上最全的前端资源汇总（包括前端学习、前端开发资源、前端求职面试等）
 
   https://github.com/wsargent/docker-cheat-sheet/tree/master/zh-cn docker使用
 
@@ -34,6 +35,18 @@ awesome
   https://github.com/Droogans/unmaintainable-code
 
 ## awesome
+
+  https://github.com/lukasz-madon/awesome-remote-job
+  
+  https://github.com/leereilly/games
+
+  https://github.com/gztchan/awesome-design
+
+  https://github.com/heynickc/awesome-ddd
+
+  https://github.com/brillout/awesome-react-components
+
+  https://github.com/mzlogin/awesome-adb
 
   https://github.com/sindresorhus/awesome awesome不用说了
 
@@ -58,6 +71,8 @@ awesome
   https://github.com/xgrommx/awesome-redux
 
   https://github.com/Leo-G/DevopsWiki
+  
+  https://github.com/Bupterambition/AwesomeCommand An awesome command for async operation with ReactiveCocoa
 
   https://github.com/enaqx/awesome-pentest#penetration-testing-resources 入侵检测
 
@@ -120,17 +135,29 @@ awesome
   https://github.com/rgcr/m-cli mac tools
 
 
-## 机器学习:
+## 机器学习/AI:
 
   https://github.com/amznlabs/amazon-dsstne
 
   https://github.com/tensorflow/magenta  学习音乐
+
+  https://github.com/david-gpu/srez 图片学习
 
   https://github.com/jisaacso/DeepHeart 心脏
 
   https://github.com/fchollet/deep-learning-models
 
   https://github.com/commaai/research
+  
+  https://github.com/usernaamee/keras-wavenet
+  
+  https://github.com/ibab/tensorflow-wavenet
+  
+  https://github.com/hungtraan/FacebookBot facebook 机器人
+  
+  https://github.com/chewxy/gorgonia
+  
+  https://github.com/tomlepaine/fast-wavenet Efficient implementation of Wavenet generation.
 
 ## system:
 
@@ -140,8 +167,21 @@ awesome
 
   https://github.com/donnemartin/gitsome python的git工具,但是好像装不上
 
+  https://github.com/codervault/codervault 在线管理snippet 的工具,好像还用上不
 
 ## JavaScript && css
+
+  https://github.com/VctrySam/whatsapp WhatsApp in React Native
+
+  https://github.com/quilljs/quill Your powerful, rich text editor http://quilljs.com
+
+  https://github.com/vuejs/vue
+
+  https://github.com/huluoyang/freecodecamp.cn freecodecamp 中国
+
+  https://github.com/xcatliu/mobi.css A lightweight, flexible css library that focus on mobile. http://getmobicss.com/
+
+  https://github.com/HiFaraz/node-playbook
 
   https://github.com/danklammer/bytesize-icons
 
@@ -202,6 +242,14 @@ awesome
   https://github.com/bahmutov/javascript-journey
 
   http://www.bootcss.com/p/font-awesome/
+  
+  https://github.com/devtools-html/debugger.html
+  
+  https://github.com/AnyChart/graphicsjs js 画2d
+  
+  https://github.com/nolanlawson/optimize-js 优化js代码
+  
+  https://github.com/mozilla/thimble.mozilla.org 在线学习htmp/js
 
   相关的文章
 
@@ -211,8 +259,14 @@ awesome
 ## react-native:
 
   https://github.com/halilb/react-native-textinput-effects
+  
+  https://github.com/FormidableLabs/react-game-kit
+  
+  https://github.com/react-native-community/React-Native-Elements
 
 ## Android:
+
+  https://github.com/hougr/SmartisanPull 锤子的下拉
 
   https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe
 
@@ -223,6 +277,8 @@ awesome
   https://github.com/Blankj/AndroidUtilCode
 
   https://github.com/eoinfogarty/Onboarding A beautiful way to introduce users to your app
+
+  https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager
 
 ## IOS:
 
@@ -254,6 +310,8 @@ awesome
 
 ## python:
 
+  https://github.com/sylnsfar/qrcode 二维码
+
   https://github.com/wuchangfeng/Python-spider python爬虫
 
   https://github.com/carpedm20/variational-text-tensorflow  TensorFlow implementation of Neural Variational Inference for Text Processing
@@ -282,7 +340,34 @@ awesome
 
 ## Ruby:
 
+  https://github.com/rmosolgo/graphql-ruby 新的api之道 
+  
+  https://github.com/rzane/baby_squeel 不错的sql helper
+  
+  https://github.com/mwpastore/ioughta Helpers for defining Go-like constants and hashes in Ruby using iota
+
+  
+  https://github.com/jvns/ruby-stacktrace ruby跟踪工具
+  
+  https://github.com/jellymann/mittsu 3D Graphics Library for Ruby
+  
+  https://github.com/remore/virtual_module 让Ruby快3倍?
+
+  https://github.com/rack-app/rack-app 最小的 rack服务
+
+  https://github.com/EventtusHQ/uniqueness 新的token方案
+
+  https://github.com/yukas/traver more than FactoryGirl
+
+  https://github.com/hone/mruby-cli mruby-cli is a platform to build native command line applications for Linux, Windows, and OS X.
+
+      It provides the tools necessary for building a standalone binary of your application from any machine.
+
+      Take advantage of the power of Ruby without the cross-platform dependency headaches that go with it.
+
   https://github.com/airbnb/ruby  style guide
+  
+  https://github.com/testdouble/suture  A Ruby gem that helps you refactor your legacy code
 
   https://github.com/thoughtbot/administrate
 
@@ -348,6 +433,16 @@ awesome
 
   https://github.com/rubysec/bundler-audit 安全 gem 跟踪
 
+  https://github.com/rails/activeresource 把远程的调用当成model 微服务可用
+
+  https://github.com/gregnavis/active_record_doctor 可以检查数据库健康,如数据库索引 4.2以上
+
+  https://github.com/sinatra/mustermann  sinatra 的路径格式转换
+
+  https://github.com/nasa/earthdata-search NASA 的地球数据发现工具
+
+  https://github.com/github/linguist 语言专家工具
+
 ## JS JavaScript:
 
   https://github.com/airbnb/javascript JavaScript Style Guide
@@ -372,7 +467,7 @@ awesome
 
   https://github.com/GeekyAnts/NativeBase Native
 
-  https://github.com/decosoftware/deco-ide reative ide 用来写react-native
+
 
   https://github.com/dvLden/Vidage Your solution to full-screen background video & image combined. https://dvLden.github.io/Vidage/
 
@@ -383,6 +478,31 @@ awesome
 
 ## golang
 
+  https://github.com/avelino/awesome-go
+
+  https://github.com/tmrts/go-patterns
+  
+    http://tmrts.com/go-patterns/
+    
+  https://github.com/gogits/gogs
+  
+  https://github.com/Masterminds/glide Package Management for Golang https://glide.sh
+  
+  https://github.com/luciotato/golang-notes
+  
+  https://github.com/xyproto/algernon Web/application server that supports Lua, live-reload, templates, Markdown, Sass and HTTP/2 http://algernon.roboticoverlords.org/
+
+  
+  https://github.com/googollee/go-socket.io
+  
+  https://github.com/future-architect/vuls Vulnerability scanner for Linux/FreeBSD, agentless, written in Go
+
+  https://github.com/zyedidia/micro editor
+  
+  https://github.com/kubernetes/kubernetes Production-Grade Container Scheduling and Management http://kubernetes.io
+
+  https://github.com/transcranial/statusboard Host status checker complete with a front-end dashboard and slack notifications
+  
   https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
 
   https://github.com/iamduo/workq 任务
@@ -393,7 +513,6 @@ awesome
 
   https://github.com/cweill/gotests Generate better Go tests from your source code 好
 
-  https://github.com/avelino/awesome-go
 
   https://github.com/valyala/quicktemplate Fast, powerful, yet easy to use template engine for Go. Optimized for speed, zero memory allocations in hot paths. Up to 20x faster than html/template
 
@@ -402,7 +521,11 @@ awesome
   https://github.com/aacanakin/qb The database toolkit for go http://qb.readme.io
 
   https://github.com/kataras/iris The fastest web framework for Go in (THIS) earth http://iris-go.com
+  
+  https://github.com/mholt/caddy Fast, cross-platform HTTP/2 web server with automatic HTTPS https://caddyserver.com
 
+  https://github.com/grafana/grafana Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
+  
   https://github.com/reconquest/orgalorg ssh同步执行
 
   https://github.com/thewhitetulip/web-dev-golang-anti-textbook
@@ -412,8 +535,12 @@ awesome
   https://github.com/fatedier/frp 本地站点到公开的proxy
 
   https://github.com/kovetskiy/go-fast Compile Go programs 7x faster
+  
+  https://github.com/mehrdadrad/mylg Network Diagnostic Tool http://mylg.io 没什么鸟用
 
 ## C:
+
+  https://github.com/facebook/zstd Zstandard - Fast real-time compression algorithm
 
   https://github.com/twitter/fatcache ssd memcache
 
@@ -426,6 +553,8 @@ awesome
   https://github.com/krzysztofzablocki/KZFileWatchers 文件变更同步,看起来很厉害的样子
 
 ## 安全:
+
+  https://github.com/pavel-odintsov/fastnetmon DDOS analysis
 
   https://github.com/presidentbeef/brakeman A static analysis security vulnerability scanner for Ruby on Rails applications
 
@@ -447,8 +576,13 @@ awesome
   https://github.com/nasa/openmct 火星探测器任务管理
 
   https://github.com/FormidableLabs/react-music
+  
+  https://github.com/kdchang/reactjs101
+  
+  https://github.com/decosoftware/deco-ide reative ide 用来写react-native
 
 ## 其它
+
 
   https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 

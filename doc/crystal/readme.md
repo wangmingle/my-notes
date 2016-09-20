@@ -1,6 +1,9 @@
 crystal
 -----
 
+
+
+
 install && make :
 
   curl http://dist.crystal-lang.org/apt/setup.sh | sudo bash
@@ -56,7 +59,7 @@ react 为前端的应用框架
   https://github.com/f/guardian guardian files
 
   https://github.com/ysbaddaden/selenium-webdriver-crystal Selenium Webdriver client for the Crystal programming language
-  https://github.com/ysbaddaden/prax.cr Rack proxy server for development (Crystal port)
+  https://github.com/ysbaddaden/prax.cr Rack proxy server for development (Crystal port) ``*.dev到开发``
   https://github.com/ysbaddaden/scrypt-crystal Crystal bindings for Colin Percival's scrypt key derivation function
   https://github.com/ysbaddaden/crystal-pg a postgres driver for crystal
   https://github.com/jtomschroeder/crystalline a collection of containers & algorithms
@@ -77,3 +80,7 @@ js:
 try:
 
   https://github.com/Compass/compass
+  为 crystal 提供 socket.io
+  https://github.com/socketio/socket.io/
+    http://www.infoq.com/cn/news/2015/01/socket-io-websocket
+    http://blog.csdn.net/fjslovejhl/article/details/12558349 中文讲原理
