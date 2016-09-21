@@ -1,9 +1,6 @@
 crystal
 -----
 
-
-
-
 install && make :
 
   curl http://dist.crystal-lang.org/apt/setup.sh | sudo bash

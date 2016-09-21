@@ -1,5 +1,12 @@
 tips:
 
+--------
+
+
+# index_by
+```
+people_by_id = Person.find(ids).index_by(&:id) # Gives you a hash indexed by ID
+ids.collect {|id| people_by_id[id] }
 ```
 # Bad. You will add this gem to the production environment even if you are not using it there
 gem 'rubocop'

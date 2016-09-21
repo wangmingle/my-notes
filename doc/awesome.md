@@ -250,6 +250,8 @@ awesome
   https://github.com/nolanlawson/optimize-js 优化js代码
   
   https://github.com/mozilla/thimble.mozilla.org 在线学习htmp/js
+  
+  https://github.com/codevise/pageflow 新式网页讲故事
 
   相关的文章
 
@@ -279,6 +281,9 @@ awesome
   https://github.com/eoinfogarty/Onboarding A beautiful way to introduce users to your app
 
   https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager
+  
+  https://github.com/ryanhoo/StylishMusicPlayer
+  
 
 ## IOS:
 
@@ -287,6 +292,10 @@ awesome
   https://github.com/alibaba/weex A framework for building Mobile cross-platform UI http://alibaba.github.io/weex
 
   https://github.com/dkhamsing/open-source-ios-apps
+  
+### 视频直播类
+
+  https://github.com/AnyRTC/AnyRTC-RTMP 
 
 ## data:
 

@@ -23,7 +23,9 @@ pass out proto tcp all user pinsons
 
 https://github.com/eastany/eastany.github.com/issues/55  中文,而且是
 http://superuser.com/questions/1088488/pseudohydrophobia-process-mac
-https://objective-see.com/blog/blog_0x0E.html
+https://objective-see.com/blog/blog_0x0E.html 分析
+
+这是一个恶意的广告软件,把机器的80请求都转给9882,显示广告后才会请求真的网站
 
 
 
