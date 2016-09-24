@@ -133,6 +133,9 @@ awesome
   https://github.com/amyhaber/cnki-downloader 文献下载工具
 
   https://github.com/rgcr/m-cli mac tools
+  
+  
+  https://github.com/huacnlee/init.d 安装工具
 
 
 ## 机器学习/AI:
@@ -349,6 +352,11 @@ awesome
 
 ## Ruby:
 
+  https://github.com/codevise/pageflow Multimedia story telling for the web
+
+  https://github.com/Paxa/light_record 加速减耗的东东,3倍以上
+    https://hackernoon.com/speed-up-allocating-activerecord-objects-86c7ced839a5#.t727j9uul
+
   https://github.com/rmosolgo/graphql-ruby 新的api之道 
   
   https://github.com/rzane/baby_squeel 不错的sql helper
@@ -486,6 +494,8 @@ awesome
   https://www.sourcelair.com/
 
 ## golang
+
+  https://github.com/alexflint/gallium Build desktop applications in Go and HTML.
 
   https://github.com/avelino/awesome-go
 

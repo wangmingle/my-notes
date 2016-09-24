@@ -1,6 +1,12 @@
 TODO
 -----
 
+* https://www.sitepoint.com/tracking-common-rails-performance-issues-with-skylight/?utm_source=rubyweekly&utm_medium=email
+另一newrelic
+* https://www.youtube.com/watch?v=_mHdUhVQOb8  虚拟器游戏in ruby 
+* http://blog.mechanicles.com/2016/09/19/microservices-using-rails-http-and-rabbitmq.html?utm_source=rubyweekly&utm_medium=email
+ruby 微服务框架
+
 * https://www.codementor.io/ruby-on-rails/tutorial/rubys-swiss-army-knife-the-enumerable-module?utm_source=rubyweekly&utm_medium=email
 
 * http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/?utm_source=rubyweekly&utm_medium=email
