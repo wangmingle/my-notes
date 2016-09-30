@@ -8,16 +8,19 @@ app.get('/', function (req, res) {
 
 io.on('connection', function(socket){
   console.log('a user connected');
+  io.emit('chat message', 'a user connected');
+
   socket.on('chat message', function(msg) {
   	console.log('message: ' + msg);
+  	io.emit('chat message', msg);
   });
   socket.on('disconnect', function () {
   	console.log('user disconnect');
+  	io.emit('chat message', 'user disconnect');
   });
 });
 
-
-
 http.listen(3000, function () {
 	console.log('listening on *:3000');
+
 });
