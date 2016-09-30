@@ -1,5 +1,21 @@
 js
 ====
+
+## sockio
+
+mkdir chat-example
+
+package.json
+
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {}
+}
+
+npm install --save express@4.14.0
+
 ## 取ip
 http://www.expressjs.com.cn/guide/behind-proxies.html
 
