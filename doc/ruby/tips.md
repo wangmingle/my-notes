@@ -2,6 +2,23 @@ tips:
 
 --------
 
+####  constant
+```
+ALERTS = {
+  'info' => InfoAlert,
+  'warn' => WarnAlert,
+  'error' => ErrorAlert
+}
+
+class AlertsController < ApplicationController
+  def create
+    ALERTS.fetch(params[:alert][:type])).new(params[:alert][:value]))
+
+    # ... other work
+    # render page
+  end
+end
+```
 
 # index_by
 ```

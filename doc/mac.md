@@ -6,7 +6,7 @@ mac
 
 ### NTFS
 
-http://xclient.info/s/tuxera-ntfs.html
+http://xclient.info/s/tuxera-ntfs.html done
 
 http://xclient.info/s/omnigraffle.html
 
@@ -18,9 +18,31 @@ http://xclient.info/s/os-x-server.html
 
 http://xclient.info/s/office-for-mac-2016.html
 
-http://xclient.info/s/omnigraffle.html
 
-http://xclient.info/s/omni-plan.html
+
+Omnigraffle Pro 6
+
+Name: mojado Serial: JYFE-JRJN-GSOT-GRAG-EVJI-TEFE-VJI
+
+Name: mojado@live.com Serial: IZAH-IRLI-EFDI-XAEM-JBJJ-JEFJ-BJJ
+
+Name: mojado@gnu.org Serial: EMIP-OSMG-CSJU-ZZBL-INXY-TEFI-NXY
+
+Name: Magic Mike Serial: LGEO-AVRN-TPGY-BZKR-WEQT-ZEB
+
+OmniPLAN
+Name: mojado
+Serial: JEFZ-ONHC-BDMA-EUAX-DJZT-FEFD-JZT
+
+Name: MOJADO
+Serial: GOZN-NTSG-WIGA-MOMD-GMPF-RCZG-MPF
+
+Name: mojado on the rocks
+Serial: NIXP-IVEN-HEYC-PRGF-OIGS-GEH
+
+Name: the mojado
+Serial: JGUM-WEVF-MSTZ-VHBT-VNTC-NEF
+
 
 ### xx[SP] 常见破解不能在  sierra 上使用
 

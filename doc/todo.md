@@ -1,6 +1,47 @@
 TODO
 -----
 
+
+
+* http://www.rubypigeon.com/posts/minitest-cheat-sheet/?utm_source=rubyweekly&utm_medium=email
+
+* http://littlelines.com/blog/2016/09/27/using-phoenix-with-a-legagy-rails-app/?utm_source=rubyweekly&utm_medium=email
+
+不错的方法,怎么把老的 rails 改成 phoenix
+
+* sidekiq 优化
+
+https://blog.codeship.com/improving-rails-performance-better-background-jobs/
+
+https://devcenter.heroku.com/articles/ruby-memory-use
+
+
+
+* https://www.codementor.io/ruby-on-rails/tutorial/check-my-code-tips-to-keep-ruby-codes-smell-free?utm_source=rubyweekly&utm_medium=email
+
+几个优化代码的方法
+
+* https://github.com/bradurani/pg-eyeballs?utm_source=rubyweekly&utm_medium=email
+pg 调优工具
+
+* https://github.com/erichaydel/errdo?utm_source=rubyweekly&utm_medium=email
+用户错误处理的框架
+
+* https://github.com/locoframework/loco-rails?utm_source=rubyweekly&utm_medium=email
+
+实时同步的框架
+
+* https://www.twitch.tv/gary_bernhardt/v/90796516?t=11m57s
+
+Writing a text editor from scratch
+
+* https://karolgalanciak.com/blog/2016/09/25/decoding-rails-magic-how-does-activejob-work/?utm_source=rubyweekly&utm_medium=email
+active_job 的原理
+
+* http://olivierlacan.com/posts/concurrency-in-ruby-3-with-guilds/?utm_source=rubyweekly&utm_medium=email
+
+ruby 3 并发模型
+
 * https://www.sitepoint.com/tracking-common-rails-performance-issues-with-skylight/?utm_source=rubyweekly&utm_medium=email
 另一newrelic
 * https://www.youtube.com/watch?v=_mHdUhVQOb8  虚拟器游戏in ruby 
