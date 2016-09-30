@@ -1,6 +1,86 @@
 
 
 
+mac
+----
+
+
+### bogon
+
+https://air20.com/archives/486.html
+
+sudo hostname your-desired-host-name
+sudo scutil --set LocalHostName $(hostname)
+sudo scutil --set HostName $(hostname)
+
+### slate 和编辑器的热键冲突 done
+
+1. 左右不全 
+2. subl不能用上下
+3. cmd+左右 不能用
+
+### 三指拖 
+
+辅助功能->鼠标与触控板->触控板选项->拖拽->三指
+
+### brew 
+
+http://heepo.github.io/工具/2015/08/05/Homebrew-Mirror-Links.html
+
+https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/
+
+https://mirrors.tuna.tsinghua.edu.cn/help/homebrew-bottles/
+
+
+brew tap homebrew/science
+$ cd /usr/local/Library/Taps/homebrew/homebrew-science
+$ git remote set-url origin git://mirrors.tuna.tsinghua.edu.cn/homebrew-science.git
+$ brew update
+
+
+### slate
+
+
+窗口控制 
+
+https://github.com/jigish/slate
+
+https://github.com/jigish/slate/blob/master/Slate/default.slate
+
+vim ~/.slate
+
+```bash
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Resize Bindings
+bind right:alt       resize +10% +0
+bind left:alt        resize -10% +0
+bind up:alt          resize +0   -10%
+bind down:alt        resize +0   +10%
+bind right:ctrl;alt  resize -10% +0 bottom-right
+bind left:ctrl;alt   resize +10% +0 bottom-right
+bind up:ctrl;alt     resize +0   +10% bottom-right
+bind down:ctrl;alt   resize +0   -10% bottom-right
+
+# Push Bindings
+bind right:ctrl;alt;cmd  push right bar-resize:screenSizeX/2
+bind left:ctrl;alt;cmd   push left  bar-resize:screenSizeX/2
+bind up:ctrl;alt;cmd     push up    bar-resize:screenSizeY/2
+bind down:ctrl;alt;cmd   push down  bar-resize:screenSizeY/2
+
+# Nudge Bindings
+bind right:shift;alt nudge +10% +0
+bind left:shift;alt  nudge -10% +0
+bind up:shift;alt    nudge +0   -10%
+bind down:shift;alt  nudge +0   +10%
+
+# Throw Bindings
+bind m:ctrl;alt;cmd         throw 0 resize
+```
+
+
 
 可能是这个pf的问题
 

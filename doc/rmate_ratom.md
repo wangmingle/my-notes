@@ -25,3 +25,4 @@ git clone https://github.com/azhao1981/mydotfiles.git dotfiles
 https://github.com/textmate/markdown.tmbundle
 
 c+a+c + p
+

@@ -17,10 +17,53 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 apt-get install libreadline-dev -y
 
 rbenv install 2.1.1
-rbenv install 2.1.6
-rbenv install 2.3.0
+
 rbenv install 2.4.0
+
 rbenv global 2.3.0
+
+rbenv shell $(rbenv global)
+
 bundle install --binstubs
 bundle binstubs rake
 rake rails:update:bin
+
+gem install mysql2 -v '0.3.18' -- --srcdir=/usr/local/mysql/include –platform=ruby
+gem install mysql2 -v '0.3.20' -- --srcdir=/usr/local/mysql/include
+
+
+done:
+bundle config build.puma --with-cppflags=-I$(brew --prefix openssl)/include
+bundle install
+
+gem install puma -v 2.8.2 -- --with-opt-dir=/usr/local/opt/openssl
+
+gem install nokogiri -v '1.6.3.1'
+
+brew install libxml2 
+brew install libxslt
+brew install homebrew/dupes/libiconv
+
+brew install homebrew/dupes/libiconv
+gem install nokogiri -v '1.6.3.1' -- --with-iconv-dir=/usr/local/Cellar/libiconv/1.14/
+udesk_im
+xcode-select --install
+gem install nokogiri -v 1.6.6.2 -- --with-iconv-dir=/usr/local/Cellar/libiconv/1.14/
+
+
+cd {RailsApp_Root}/vendor/bundle/ruby/1.9.1/gems/mysql2-0.3.11/ext/mysql2
+ruby extconf.rb
+make
+make install
+
+
+dont do :
+/usr/local/opt/mysql/bin/mysql_secure_installation
+
+1）brew services stop mysql
+
+2) mysql -uroot
+
+
+
+

@@ -3,7 +3,12 @@ DOCKER
 
 ##
 
-内核之外所有东西的容器
+
+### 阿里云深度学习
+
+alicloudhpc/toolkit
+
+https://dev.aliyun.com/detail.html?spm=5176.100208.8.2.VSKcdu&repoId=2
 
 ### mac下访问宿主机端口
 

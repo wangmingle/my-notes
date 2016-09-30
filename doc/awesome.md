@@ -138,6 +138,13 @@ awesome
   https://github.com/huacnlee/init.d 安装工具
 
 
+
+### Tools
+
+  https://github.com/gavinkwoe/weapp-ide-crack 微信开发
+  
+  https://github.com/dripcap/dripcap 抓包工具
+  
 ## 机器学习/AI:
 
   https://github.com/amznlabs/amazon-dsstne
@@ -173,6 +180,8 @@ awesome
   https://github.com/codervault/codervault 在线管理snippet 的工具,好像还用上不
 
 ## JavaScript && css
+
+  https://github.com/bijection/g9 Automatically interactive graphics for the web
 
   https://github.com/VctrySam/whatsapp WhatsApp in React Native
 

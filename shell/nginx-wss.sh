@@ -8,8 +8,8 @@ sudo make
 sudo make install
 
 https://www.nginx.com/resources/wiki/start/topics/tutorials/installoptions/#
-sudo wget http://nginx.org/download/nginx-1.9.14.tar.gz
-sudo tar xzvf nginx-1.9.14.tar.gz && cd nginx-1.9.14
+sudo wget http://nginx.org/download/nginx-1.9.15.tar.gz
+sudo tar xzvf nginx-1.9.14.tar.gz && cd nginx-1.9.15
 
 https://www.nginx.com/resources/admin-guide/tcp-load-balancing/
 sudo ./configure --prefix=/srv/nginx-wss \

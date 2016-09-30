@@ -1,6 +1,44 @@
 mac
 ======
 
+
+
+
+### NTFS
+
+http://xclient.info/s/tuxera-ntfs.html
+
+http://xclient.info/s/omnigraffle.html
+
+http://xclient.info/s/omni-plan.html
+
+http://xclient.info/s/charles.html
+
+http://xclient.info/s/os-x-server.html
+
+http://xclient.info/s/office-for-mac-2016.html
+
+http://xclient.info/s/omnigraffle.html
+
+http://xclient.info/s/omni-plan.html
+
+### xx[SP] 常见破解不能在  sierra 上使用
+
+首先Mac上需要安装Xcode，Xcode的作用就是提供提供程序运行的框架，让patcher和eyePatch可以像Dash 3.x [SP].app那样运行在操作系统中
+
+正常安装程序
+
+将 DMG 中的 Patch 工具（ 本例中：Dash 3.x [SP].app）移动到本机，如下载文件夹中，右键显示包内容进入Contents——MacOS。你会看到这两个文件 eyePatch，patcher
+
+打开 终端 ，按照以下顺序，将 对应文件依次拖入终端窗口：
+
+patcher - Dash.app - eyePatch - Dash.app
+
+成功的话，会提示上图中 倒数第三行及第二行内容：
+
+code_alloc_xc_ios:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate
+
+
 proxy :
 git config --global http.proxy 'socks5://127.0.0.1:1080'
 git config --global https.proxy 'socks5://127.0.0.1:1080'
