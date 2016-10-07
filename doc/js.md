@@ -1,8 +1,19 @@
 js
 ====
 
-## sockio
 
+
+##  在 2016 年学 JavaScript 是一种什么样的体验？
+
+https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.axai1uwuo
+
+https://www.v2ex.com/t/310767
+
+
+
+## sockio
+https://www.zhihu.com/question/20215561
+http://www.alloyteam.com/2015/04/qian-duan-qiang-hou-duan-fan-wan-node-js-socket-io-zhi-zuo-jian-yi-liao-tian-shi/
 
 
 ## 取ip

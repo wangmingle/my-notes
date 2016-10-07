@@ -2,6 +2,119 @@ tips:
 
 --------
 
+
+#### 删除
+
+```
+class Building < ActiveRecord::Base
+  has_many :apartments, dependent: :destroy
+end
+
+class Apartment < ActiveRecord::Base
+  has_many :rooms, dependent: :destroy
+end
+
+## rails4.0以后可以使用 数据库自带的方法来删除
+
+class CreateForeignKeys < ActiveRecord::Migration
+  def change
+    add_foreign_key :apartments, :buildings, on_delete: :cascade
+    add_foreign_key :rooms, :apartments, on_delete: :cascade
+    add_foreign_key :furnitures, :rooms, on_delete: :cascade
+    add_foreign_key :materials, :furnitures, on_delete: :cascade
+  end
+end
+
+```
+
+
+#### cable
+
+ --skip-action-cable
+ 
+#### comment
+
+```
+def is_prime?(n)
+  # Any factor greater than sqrt(n) has a corresponding factor less than 
+  # sqrt(n), so once i >=sqrt(n) we have covered all cases
+  while i * i < n
+    if n % i == 0 
+      return false
+    end
+    i += 1
+  end
+  true
+end
+```
+
+#### Struct
+
+
+```
+Struct.new("Person", :height, :hair_color, :dominant_hand, :iq, :astigmatic?)
+# Or,
+
+Person = Struct.new(:height, :hair_color, :dominant_hand, :iq, :astigmatic?)
+
+sally = Person.new(165, "red", :left, 180, true)
+```
+
+#### sidekiq
+
+```
+# https://blog.codeship.com/improving-rails-performance-better-background-jobs/
+
+# https://devcenter.heroku.com/articles/ruby-memory-use
+
+
+class ContentSuggestionWorker
+  include Sidekiq::Worker
+
+  def perform
+    User.where(subscribed: true).find_in_batches(batch_size: 100) do |group|
+      group.each { |user| ContentMailer.suggest_to(user).deliver_now }
+    end
+  end
+end
+
+find_in_batches
+
+# 拆分: 在指量的任务中不取出也不真正的进行操作
+
+class ContentSuggestionEnqueuer
+  def self.enqueue
+    User.where(subscribed: true).pluck(:id).each do |user_id|
+      ContentSuggestionWorker.perform_async(user_id)
+    end
+  end
+end
+class ContentSuggestionWorker
+  include Sidekiq::Worker
+  sidekiq_options retry: false
+
+  def perform(user_id)
+    user = User.find(user_id)
+    ContentMailer.suggest_to(user).deliver_now
+  end
+end
+
+
+# GC ,这个我们自己试好像没有用?
+class ContentSuggestionWorker
+  include Sidekiq::Worker
+  sidekiq_options retry: false
+
+  def perform(user_id)
+    user = User.find(user_id)
+    ContentMailer.suggest_to(user).deliver_now
+    GC.start
+  end
+end
+
+# https://github.com/bear-metal/tunemygc gc第三方服务
+```
+
 ####  constant
 ```
 ALERTS = {

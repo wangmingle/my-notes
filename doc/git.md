@@ -34,3 +34,6 @@ checkout tag
 
 git checkout -b tag_name tag_name
 git checkout -b v3.2.1 v3.2.1
+
+
+git config --global https.proxy 'socks5://127.0.0.1:1080'

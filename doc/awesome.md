@@ -36,6 +36,10 @@ awesome
 
 ## awesome
 
+  https://github.com/detailyang/awesome-cheatsheet
+
+  https://github.com/postlight/awesome-cms
+
   https://github.com/lukasz-madon/awesome-remote-job
   
   https://github.com/leereilly/games
@@ -137,6 +141,8 @@ awesome
   
   https://github.com/huacnlee/init.d 安装工具
 
+  https://github.com/wulkano/kap mac 录屏技术/web
+
 
 
 ### Tools
@@ -144,8 +150,18 @@ awesome
   https://github.com/gavinkwoe/weapp-ide-crack 微信开发
   
   https://github.com/dripcap/dripcap 抓包工具
+
+  https://github.com/sdg-mit/gitless
+  http://gitless.com
+  http://gitless.com/#documentation
+
+  https://github.com/noffle/art-of-readme
+
+  https://github.com/dempfi/ayu Modern Sublime Text 3 and 2 theme 看起一般
   
 ## 机器学习/AI:
+
+  https://github.com/dennybritz/reinforcement-learning
 
   https://github.com/amznlabs/amazon-dsstne
 
@@ -168,6 +184,8 @@ awesome
   https://github.com/chewxy/gorgonia
   
   https://github.com/tomlepaine/fast-wavenet Efficient implementation of Wavenet generation.
+
+  https://github.com/jcjohnson/fast-neural-style
 
 ## system:
 
@@ -361,6 +379,14 @@ awesome
 
 ## Ruby:
 
+  https://github.com/karafka/karafka#how-does-it-work 新的异步框架
+  
+  https://github.com/stympy/faker 做假数据 
+
+  https://github.com/antulik/pagelet_rails Improve perceived performance of your rails application with minimum effort
+
+  https://github.com/locoframework/loco-rails Rails is awesome, but modern web needs Loco-motive.
+
   https://github.com/codevise/pageflow Multimedia story telling for the web
 
   https://github.com/Paxa/light_record 加速减耗的东东,3倍以上
@@ -504,6 +530,10 @@ awesome
 
 ## golang
 
+  https://github.com/docker/infrakit A toolkit for creating and managing declarative, self-healing infrastructure.
+
+  https://github.com/tidwall/tile38
+
   https://github.com/alexflint/gallium Build desktop applications in Go and HTML.
 
   https://github.com/avelino/awesome-go
@@ -574,6 +604,8 @@ awesome
 
   https://github.com/alexazhou/VeryNginx VeryNginx is a very powerful and friendly nginx nginx扩展,国人制造
 
+  https://github.com/uWebSockets/uWebSockets Highly scalable WebSocket server & client library
+
 ## swift
 
   https://github.com/AugustRush/Stellar 动图
@@ -611,6 +643,7 @@ awesome
 
 ## 其它
 
+  https://github.com/jwasham/google-interview-university A complete daily plan for studying to become a Google software engineer.
 
   https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 
@@ -621,6 +654,12 @@ awesome
   https://github.com/open-power-workgroup/Hospital
 
   https://haoel.github.io  科学上网法
+
+  https://github.com/googlecartographer/cartographer 2d/3d 定位
+
+  https://github.com/udacity/self-driving-car
+
+  https://github.com/anvaka/time Simple Google Sheets interface to track time https://time.anvaka.com google表格当成数据库的应用
 
 BOOK
 

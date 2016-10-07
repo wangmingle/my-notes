@@ -1,60 +1,62 @@
 TODO
 -----
 
+* http://blog.appsignal.com/blog/2016/09/27/git-rebasing-strategies.html
+
+合并复杂分支
+
+* http://andycroll.com/ruby/amp-project-pages-ruby-on-rails
+直挂移动端的
+
+* http://travisofthenorth.com/blog/2016/10/2/beware-the-orm
+orm的锁和join操作
+
+* http://ruby-hyperloop.io/
+	https://github.com/reactrb
+
+	用纯ruby来写前端
+
+* https://prograils.com/posts/brief-introduction-to-internationalization-in-rails
+
+* https://asok.github.io/ruby/2016/10/03/parslet.html
+
+elasticsearch
 
 
-* http://www.rubypigeon.com/posts/minitest-cheat-sheet/?utm_source=rubyweekly&utm_medium=email
+* https://blog.codeship.com/getting-started-with-websockets-in-go
 
-* http://littlelines.com/blog/2016/09/27/using-phoenix-with-a-legagy-rails-app/?utm_source=rubyweekly&utm_medium=email
+* https://samsaffron.com/archive/2014/04/08/ruby-2-1-garbage-collection-ready-for-production
 
-不错的方法,怎么把老的 rails 改成 phoenix
-
-* sidekiq 优化
-
-https://blog.codeship.com/improving-rails-performance-better-background-jobs/
-
-https://devcenter.heroku.com/articles/ruby-memory-use
+http://thorstenball.com/blog/2014/03/12/watching-understanding-ruby-2.1-garbage-collector/
 
 
 
-* https://www.codementor.io/ruby-on-rails/tutorial/check-my-code-tips-to-keep-ruby-codes-smell-free?utm_source=rubyweekly&utm_medium=email
-
-几个优化代码的方法
-
-* https://github.com/bradurani/pg-eyeballs?utm_source=rubyweekly&utm_medium=email
+* https://github.com/bradurani/pg-eyeballs
 pg 调优工具
 
-* https://github.com/erichaydel/errdo?utm_source=rubyweekly&utm_medium=email
-用户错误处理的框架
-
-* https://github.com/locoframework/loco-rails?utm_source=rubyweekly&utm_medium=email
-
-实时同步的框架
 
 * https://www.twitch.tv/gary_bernhardt/v/90796516?t=11m57s
 
 Writing a text editor from scratch
 
-* https://karolgalanciak.com/blog/2016/09/25/decoding-rails-magic-how-does-activejob-work/?utm_source=rubyweekly&utm_medium=email
+* https://karolgalanciak.com/blog/2016/09/25/decoding-rails-magic-how-does-activejob-work/
 active_job 的原理
 
-* http://olivierlacan.com/posts/concurrency-in-ruby-3-with-guilds/?utm_source=rubyweekly&utm_medium=email
+* http://olivierlacan.com/posts/concurrency-in-ruby-3-with-guilds/
 
 ruby 3 并发模型
 
-* https://www.sitepoint.com/tracking-common-rails-performance-issues-with-skylight/?utm_source=rubyweekly&utm_medium=email
-另一newrelic
 * https://www.youtube.com/watch?v=_mHdUhVQOb8  虚拟器游戏in ruby 
-* http://blog.mechanicles.com/2016/09/19/microservices-using-rails-http-and-rabbitmq.html?utm_source=rubyweekly&utm_medium=email
+* http://blog.mechanicles.com/2016/09/19/microservices-using-rails-http-and-rabbitmq.html
 ruby 微服务框架
 
-* https://www.codementor.io/ruby-on-rails/tutorial/rubys-swiss-army-knife-the-enumerable-module?utm_source=rubyweekly&utm_medium=email
+* https://www.codementor.io/ruby-on-rails/tutorial/rubys-swiss-army-knife-the-enumerable-module
 
-* http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/?utm_source=rubyweekly&utm_medium=email
+* http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/
 
 rails development on docker
 
-
+db
 * https://www.youtube.com/watch?v=RGFkP4DQP-g
 
 Authentication Crash Course with Devise
@@ -102,7 +104,7 @@ Irssi
   这人把RUBY执行时间优化了...但没有通过
 * https://blog.phusion.nl/2016/08/31/efficiently-and-conveniently-building-ruby-and-node-js-application-docker-containers-for-production-2
 
-* https://robots.thoughtbot.com/elixir-for-rubyists?utm_source=rubyweekly&utm_medium=email
+* https://robots.thoughtbot.com/elixir-for-rubyists
 
 * http://blog.nrowegt.com/get-rails-data-to-glass-quicker-with-clusterize-js-coffeescript/ ruby项目加js组件的方案
 * consul
@@ -142,27 +144,21 @@ http://redgreenrepeat.com/2016/07/29/selenium-ruby
 
 * https://blog.phusion.nl/2016/08/04/using-rails-5-actioncable-and-rethinkdb-to-build-a-reactive-websocket-app
 
-* http://www.blackbytes.info/2016/06/linux-tools-with-ruby/?utm_source=rubyweekly&utm_medium=email
+* http://www.blackbytes.info/2016/06/linux-tools-with-ruby/
 
 * RailsConf 2016 - Turbolinks 5: I Can’t Believe It’s Not Native! by Sam Stephenson
 https://www.youtube.com/watch?v=SWEts0rlezA
 
 * Next-generation Ruby web apps with dry-rb, rom-rb, and Roda: RedDotRubyConf 2016
-https://www.icelab.com.au/notes/next-generation-ruby-web-apps-with-dry-rb-rom-rb-and-roda-reddotrubyconf-2016?utm_source=rubyweekly&utm_medium=email
+https://www.icelab.com.au/notes/next-generation-ruby-web-apps-with-dry-rb-rom-rb-and-roda-reddotrubyconf-2016
 
 http://dry-rb.org/resources/reddotrubyconf-2016/
 
-* http://www.codelitt.com/blog/intro-setting-up-your-first-docker-container-your-rails-app/?utm_source=rubyweekly&utm_medium=email
+* http://www.codelitt.com/blog/intro-setting-up-your-first-docker-container-your-rails-app/
 
 
 * https://dockyard.com/blog/2016/08/09/phoenix-channels-vs-rails-action-cable
 
-* http://blog.pawandubey.com/implementing-a-naive-bayes-text-classifier/?utm_source=rubyweekly&utm_medium=email
+* http://blog.pawandubey.com/implementing-a-naive-bayes-text-classifier/
 
-* https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-minitest 测试过程
 
-* http://blog.sundaycoding.com/blog/2016/08/10/how-to-remove-action-cable-from-a-rails-app/
-
-* https://www.zhihu.com/question/20215561 websocket
-
-* http://www.alloyteam.com/2015/04/qian-duan-qiang-hou-duan-fan-wan-node-js-socket-io-zhi-zuo-jian-yi-liao-tian-shi/
