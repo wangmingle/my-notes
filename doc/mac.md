@@ -1,9 +1,6 @@
 mac
 ======
 
-
-
-
 ### NTFS
 
 http://xclient.info/s/tuxera-ntfs.html done

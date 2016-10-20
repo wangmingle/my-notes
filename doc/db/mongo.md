@@ -1,7 +1,7 @@
 mongo.md
 ----
 
-### install 
+### install
 
 
 ### get start
@@ -57,6 +57,8 @@ db.createUser(
    }
 )
 
+role & user
+https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/#create-a-user-defined-role
 
 
 超级用户拥有最大权限，可以对所有数据库进行任意操作，超级用户储存在 admin 数据库中，刚安装的 MongoDB 中 admin 数据库是空的；
@@ -91,7 +93,7 @@ documents -> row
 
 db.person.insert({"name": "weizhao","age": 35});
 
-find 
+find
 
 db.person.find();
 
@@ -324,7 +326,7 @@ switched to db test
         "_id" : ObjectId("52f5928625d9e18cd51581b9")
 }
 > db.system.users.find()
-{ "_id" : ObjectId("52f5928625d9e18cd51581b9"), "user" : "test_user", "readOnly" : false, 
+{ "_id" : ObjectId("52f5928625d9e18cd51581b9"), "user" : "test_user", "readOnly" : false,
 pwd" : "bf7a0adf9822a3379d6dfb1ebd38b92e" }
 # 验证函数，验证数据库中是否存在对应的用户
 > db.auth("test_user","password")
@@ -339,14 +341,14 @@ switched to db test1
 { "_id" : ObjectId("52f593f425d9e18cd51581bc"), "id" : 3, "info" : "I am in test1" }
 
 
-	
+
 D:\MongoDB\mongodb-2.4.8>.\bin\mongod --dbpath=.\data --logpath=.\log\log.log --auth
 重新以认证的方式启动数据库，启动时添加 –auth 参数
 
 mongo
 MongoDB shell version: 2.4.8
 connecting to: test
-没有建admin,还是默认有超级用户权限 
+没有建admin,还是默认有超级用户权限
 
 # 在 admin 数据库中创建用户 supper，密码为 password
 > use admin
@@ -364,8 +366,3 @@ switched to db admin
 >
 
 mongo 127.0.0.1/admin -usupper -ppassword
-
-
-
-
-

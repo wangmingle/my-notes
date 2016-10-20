@@ -1,6 +1,9 @@
 tips:
 
 --------
+###
+
+https://github.com/MaximAbramchuck/awesome-interview-questions#ruby-on-rails
 
 
 #### 删除
@@ -31,15 +34,15 @@ end
 #### cable
 
  --skip-action-cable
- 
+
 #### comment
 
 ```
 def is_prime?(n)
-  # Any factor greater than sqrt(n) has a corresponding factor less than 
+  # Any factor greater than sqrt(n) has a corresponding factor less than
   # sqrt(n), so once i >=sqrt(n) we have covered all cases
   while i * i < n
-    if n % i == 0 
+    if n % i == 0
       return false
     end
     i += 1

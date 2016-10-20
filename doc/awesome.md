@@ -36,12 +36,16 @@ awesome
 
 ## awesome
 
+  https://github.com/kdeldycke/awesome-falsehood 开发假话大全
+
+  https://github.com/airen/DemoHouse
+
   https://github.com/detailyang/awesome-cheatsheet
 
   https://github.com/postlight/awesome-cms
 
   https://github.com/lukasz-madon/awesome-remote-job
-  
+
   https://github.com/leereilly/games
 
   https://github.com/gztchan/awesome-design
@@ -75,7 +79,7 @@ awesome
   https://github.com/xgrommx/awesome-redux
 
   https://github.com/Leo-G/DevopsWiki
-  
+
   https://github.com/Bupterambition/AwesomeCommand An awesome command for async operation with ReactiveCocoa
 
   https://github.com/enaqx/awesome-pentest#penetration-testing-resources 入侵检测
@@ -126,6 +130,10 @@ awesome
 
   https://github.com/VoLuong/Awesome-Linux-Software
 
+  https://github.com/prakhar1989/awesome-courses
+
+  https://github.com/alebcay/awesome-shell
+
 ## live
 
   https://github.com/ltebean/Live
@@ -137,8 +145,8 @@ awesome
   https://github.com/amyhaber/cnki-downloader 文献下载工具
 
   https://github.com/rgcr/m-cli mac tools
-  
-  
+
+
   https://github.com/huacnlee/init.d 安装工具
 
   https://github.com/wulkano/kap mac 录屏技术/web
@@ -147,8 +155,10 @@ awesome
 
 ### Tools
 
+  http://limetext.org 代替 subl 的,但是好像还不能用
+
   https://github.com/gavinkwoe/weapp-ide-crack 微信开发
-  
+
   https://github.com/dripcap/dripcap 抓包工具
 
   https://github.com/sdg-mit/gitless
@@ -158,8 +168,19 @@ awesome
   https://github.com/noffle/art-of-readme
 
   https://github.com/dempfi/ayu Modern Sublime Text 3 and 2 theme 看起一般
-  
-## 机器学习/AI:
+
+## 机器学习/AI/人工智能:
+
+  https://github.com/Microsoft/LightGBM
+
+  ChatROBOT
+  https://hubot.github.com
+  https://github.com/warmheartli/ChatBotCourse
+  https://github.com/gunthercox/ChatterBot
+
+  https://github.com/ZuzooVn/machine-learning-for-software-engineers
+
+  https://github.com/CreatCodeBuild/TensorFlow-Chinese-Tutorial
 
   https://github.com/dennybritz/reinforcement-learning
 
@@ -174,15 +195,15 @@ awesome
   https://github.com/fchollet/deep-learning-models
 
   https://github.com/commaai/research
-  
+
   https://github.com/usernaamee/keras-wavenet
-  
+
   https://github.com/ibab/tensorflow-wavenet
-  
+
   https://github.com/hungtraan/FacebookBot facebook 机器人
-  
+
   https://github.com/chewxy/gorgonia
-  
+
   https://github.com/tomlepaine/fast-wavenet Efficient implementation of Wavenet generation.
 
   https://github.com/jcjohnson/fast-neural-style
@@ -197,7 +218,9 @@ awesome
 
   https://github.com/codervault/codervault 在线管理snippet 的工具,好像还用上不
 
-## JavaScript && css
+## JavaScript && css && JS
+
+  https://github.com/mikeal/roll-call web p2p 语音聊天
 
   https://github.com/bijection/g9 Automatically interactive graphics for the web
 
@@ -272,15 +295,15 @@ awesome
   https://github.com/bahmutov/javascript-journey
 
   http://www.bootcss.com/p/font-awesome/
-  
+
   https://github.com/devtools-html/debugger.html
-  
+
   https://github.com/AnyChart/graphicsjs js 画2d
-  
+
   https://github.com/nolanlawson/optimize-js 优化js代码
-  
+
   https://github.com/mozilla/thimble.mozilla.org 在线学习htmp/js
-  
+
   https://github.com/codevise/pageflow 新式网页讲故事
 
   相关的文章
@@ -291,9 +314,9 @@ awesome
 ## react-native:
 
   https://github.com/halilb/react-native-textinput-effects
-  
+
   https://github.com/FormidableLabs/react-game-kit
-  
+
   https://github.com/react-native-community/React-Native-Elements
 
 ## Android:
@@ -311,9 +334,9 @@ awesome
   https://github.com/eoinfogarty/Onboarding A beautiful way to introduce users to your app
 
   https://github.com/DevLight-Mobile-Agency/InfiniteCycleViewPager
-  
+
   https://github.com/ryanhoo/StylishMusicPlayer
-  
+
 
 ## IOS:
 
@@ -322,10 +345,10 @@ awesome
   https://github.com/alibaba/weex A framework for building Mobile cross-platform UI http://alibaba.github.io/weex
 
   https://github.com/dkhamsing/open-source-ios-apps
-  
+
 ### 视频直播类
 
-  https://github.com/AnyRTC/AnyRTC-RTMP 
+  https://github.com/AnyRTC/AnyRTC-RTMP
 
 ## data:
 
@@ -380,8 +403,8 @@ awesome
 ## Ruby:
 
   https://github.com/karafka/karafka#how-does-it-work 新的异步框架
-  
-  https://github.com/stympy/faker 做假数据 
+
+  https://github.com/stympy/faker 做假数据
 
   https://github.com/antulik/pagelet_rails Improve perceived performance of your rails application with minimum effort
 
@@ -392,17 +415,17 @@ awesome
   https://github.com/Paxa/light_record 加速减耗的东东,3倍以上
     https://hackernoon.com/speed-up-allocating-activerecord-objects-86c7ced839a5#.t727j9uul
 
-  https://github.com/rmosolgo/graphql-ruby 新的api之道 
-  
+  https://github.com/rmosolgo/graphql-ruby 新的api之道
+
   https://github.com/rzane/baby_squeel 不错的sql helper
-  
+
   https://github.com/mwpastore/ioughta Helpers for defining Go-like constants and hashes in Ruby using iota
 
-  
+
   https://github.com/jvns/ruby-stacktrace ruby跟踪工具
-  
+
   https://github.com/jellymann/mittsu 3D Graphics Library for Ruby
-  
+
   https://github.com/remore/virtual_module 让Ruby快3倍?
 
   https://github.com/rack-app/rack-app 最小的 rack服务
@@ -418,7 +441,7 @@ awesome
       Take advantage of the power of Ruby without the cross-platform dependency headaches that go with it.
 
   https://github.com/airbnb/ruby  style guide
-  
+
   https://github.com/testdouble/suture  A Ruby gem that helps you refactor your legacy code
 
   https://github.com/thoughtbot/administrate
@@ -530,6 +553,17 @@ awesome
 
 ## golang
 
+  https://github.com/flynn/flynn A next generation open source platform as a service (PaaS) https://flynn.io
+
+  https://github.com/cstockton/go-conv
+
+  https://github.com/Terry-Mao/goim  B站的底层
+
+    http://blog-back.qiniu.com/archives/6611
+
+
+  https://github.com/p8952/bocker
+
   https://github.com/docker/infrakit A toolkit for creating and managing declarative, self-healing infrastructure.
 
   https://github.com/tidwall/tile38
@@ -539,28 +573,28 @@ awesome
   https://github.com/avelino/awesome-go
 
   https://github.com/tmrts/go-patterns
-  
+
     http://tmrts.com/go-patterns/
-    
+
   https://github.com/gogits/gogs
-  
+
   https://github.com/Masterminds/glide Package Management for Golang https://glide.sh
-  
+
   https://github.com/luciotato/golang-notes
-  
+
   https://github.com/xyproto/algernon Web/application server that supports Lua, live-reload, templates, Markdown, Sass and HTTP/2 http://algernon.roboticoverlords.org/
 
-  
+
   https://github.com/googollee/go-socket.io
-  
+
   https://github.com/future-architect/vuls Vulnerability scanner for Linux/FreeBSD, agentless, written in Go
 
   https://github.com/zyedidia/micro editor
-  
+
   https://github.com/kubernetes/kubernetes Production-Grade Container Scheduling and Management http://kubernetes.io
 
   https://github.com/transcranial/statusboard Host status checker complete with a front-end dashboard and slack notifications
-  
+
   https://github.com/rogeralsing/gam Go Actor Model framework - Ultra fast distributed actors for Golang
 
   https://github.com/iamduo/workq 任务
@@ -579,11 +613,11 @@ awesome
   https://github.com/aacanakin/qb The database toolkit for go http://qb.readme.io
 
   https://github.com/kataras/iris The fastest web framework for Go in (THIS) earth http://iris-go.com
-  
+
   https://github.com/mholt/caddy Fast, cross-platform HTTP/2 web server with automatic HTTPS https://caddyserver.com
 
   https://github.com/grafana/grafana Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
-  
+
   https://github.com/reconquest/orgalorg ssh同步执行
 
   https://github.com/thewhitetulip/web-dev-golang-anti-textbook
@@ -593,7 +627,7 @@ awesome
   https://github.com/fatedier/frp 本地站点到公开的proxy
 
   https://github.com/kovetskiy/go-fast Compile Go programs 7x faster
-  
+
   https://github.com/mehrdadrad/mylg Network Diagnostic Tool http://mylg.io 没什么鸟用
 
 ## C:
@@ -636,9 +670,9 @@ awesome
   https://github.com/nasa/openmct 火星探测器任务管理
 
   https://github.com/FormidableLabs/react-music
-  
+
   https://github.com/kdchang/reactjs101
-  
+
   https://github.com/decosoftware/deco-ide reative ide 用来写react-native
 
 ## 其它

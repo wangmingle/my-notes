@@ -132,6 +132,12 @@ SetMaxOpenConns
 
 
 
+http://www.cnblogs.com/howDo/archive/2013/06/01/GoLang-Control.html
+https://golang.org/doc/effective_go.html
+
+:= 推导赋值
+http://blog.ixcv.com/posts/1380.html
+
 
 
 

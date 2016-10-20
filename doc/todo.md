@@ -1,6 +1,16 @@
 TODO
 -----
 
+* http://mp.weixin.qq.com/s?__biz=MjM5OTcxMzE0MQ%3D%3D&mid=2653369770&idx=1&sn=044be64c577a11a9a13447b373e80082&chksm=bce4d5b08b935ca6ad59abb5cc733a341a5126fefc0e6600bd61c959969c5f77c95fbfb909e3&mpshare=1&scene=1&srcid=1008yASawJoqT3FVd0IhPQYm
+使用Go语言每分钟处理1百万请求
+
+* 大公司是怎么发布静态资源的
+https://segmentfault.com/a/1190000007122250?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly
+
+* 机器学习实战，使用朴素贝叶斯来做情感分析
+https://segmentfault.com/a/1190000007109901?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly
+应该就是要找的似相似算法
+
 * http://blog.appsignal.com/blog/2016/09/27/git-rebasing-strategies.html
 
 合并复杂分支
@@ -46,7 +56,7 @@ active_job 的原理
 
 ruby 3 并发模型
 
-* https://www.youtube.com/watch?v=_mHdUhVQOb8  虚拟器游戏in ruby 
+* https://www.youtube.com/watch?v=_mHdUhVQOb8  虚拟器游戏in ruby
 * http://blog.mechanicles.com/2016/09/19/microservices-using-rails-http-and-rabbitmq.html
 ruby 微服务框架
 
@@ -160,5 +170,3 @@ http://dry-rb.org/resources/reddotrubyconf-2016/
 * https://dockyard.com/blog/2016/08/09/phoenix-channels-vs-rails-action-cable
 
 * http://blog.pawandubey.com/implementing-a-naive-bayes-text-classifier/
-
-
