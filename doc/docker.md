@@ -47,43 +47,31 @@ Mac系统的安装文件目录： mirrors.aliyun.com/docker-toolbox/mac
   ```
 #### windows
 
-推荐您安装Docker Toolbox。
-Toolbox的介绍和帮助： mirrors.aliyun.com/help/docker-toolbox
-Windows系统的安装文件目录： mirrors.aliyun.com/docker-toolbox/windows
+  Toolbox的介绍和帮助： mirrors.aliyun.com/help/docker-toolbox
 
-#### 创建一台安装有Docker环境的Linux虚拟机，指定机器名称为default，同时配置Docker加速器地址。
-docker-machine create --engine-registry-mirror=https://j90112tg.mirror.aliyuncs.com -d virtualbox default
+  Windows系统的安装文件目录： mirrors.aliyun.com/docker-toolbox/windows
 
-#### 查看机器的环境配置，并配置到本地。然后通过Docker客户端访问Docker服务。
-docker-machine env default
-eval "$(docker-machine env default)"
-docker info
+
+## FAQ
+
+  1. ERROR: TERM environment variable not set.
+
+  export TERM=dumb
 
 
 ## 参考
 
-https://www.gitbook.com/book/joshhu/docker_theory_install/details
-https://joshhu.gitbooks.io/docker_theory_install/content/
+[最完整的Docker聖經(文中书)](https://joshhu.gitbooks.io/docker_theory_install/content/)
 
-http://dockone.io/article/783
+[10张图带你深入理解Docker容器和镜像](http://dockone.io/article/783)
 
-## FAQ
+[alicloudhpc/toolkit 阿里云深度学习](https://dev.aliyun.com/detail.html?spm=5176.100208.8.2.VSKcdu&repoId=2)
 
+[mac下访问宿主机端口](https://github.com/docker/docker/issues/1143)
 
-1. ERROR: TERM environment variable not set.
-export TERM=dumb
-
-### 阿里云深度学习
-
-alicloudhpc/toolkit
-
-https://dev.aliyun.com/detail.html?spm=5176.100208.8.2.VSKcdu&repoId=2
-
-### mac下访问宿主机端口
-
-https://github.com/docker/docker/issues/1143
-
+```
 Docker auto updating /etc/hosts on every container with the host IP, e.g. 172.17.42.1 and calling it for example dockerhost would be a convenient fix.
 I guess for now we are stuck with
 netstat -nr | grep '^0\.0\.0\.0' | awk '{print $2}'
 就是写hosts 然后直接访问就好了
+```
