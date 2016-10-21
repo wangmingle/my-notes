@@ -3,24 +3,15 @@ DOCKER
 
 ##
 
+### 为什么要用
 
-### 阿里云深度学习
+* 安装方便简单
+* 没有权限烦恼
+* 漏洞攻击影响小,保护宿主机
 
-alicloudhpc/toolkit
+### 使用国内镜像安装docker
 
-https://dev.aliyun.com/detail.html?spm=5176.100208.8.2.VSKcdu&repoId=2
-
-### mac下访问宿主机端口
-
-https://github.com/docker/docker/issues/1143
-
-Docker auto updating /etc/hosts on every container with the host IP, e.g. 172.17.42.1 and calling it for example dockerhost would be a convenient fix.
-I guess for now we are stuck with
-netstat -nr | grep '^0\.0\.0\.0' | awk '{print $2}'
-就是写hosts 然后直接访问就好了
-
-
-### ubuntu
+#### ubuntu
 
 请安装1.6.0以上版本的Docker。
 您可以通过阿里云的镜像仓库下载： mirrors.aliyun.com/help/docker-engine
@@ -34,7 +25,7 @@ echo "DOCKER_OPTS=\"\$DOCKER_OPTS --registry-mirror=https://j90112tg.mirror.aliy
 sudo service docker restart
 
 
-### mac
+#### mac
 
 安装或升级Docker
 
@@ -52,7 +43,7 @@ docker-machine env default
 eval "$(docker-machine env default)"
 docker info
 
-### windows
+#### windows
 
 推荐您安装Docker Toolbox。
 Toolbox的介绍和帮助： mirrors.aliyun.com/help/docker-toolbox
@@ -79,3 +70,18 @@ http://dockone.io/article/783
 
 1. ERROR: TERM environment variable not set.
 export TERM=dumb
+
+### 阿里云深度学习
+
+alicloudhpc/toolkit
+
+https://dev.aliyun.com/detail.html?spm=5176.100208.8.2.VSKcdu&repoId=2
+
+### mac下访问宿主机端口
+
+https://github.com/docker/docker/issues/1143
+
+Docker auto updating /etc/hosts on every container with the host IP, e.g. 172.17.42.1 and calling it for example dockerhost would be a convenient fix.
+I guess for now we are stuck with
+netstat -nr | grep '^0\.0\.0\.0' | awk '{print $2}'
+就是写hosts 然后直接访问就好了

@@ -36,6 +36,8 @@ awesome
 
 ## awesome
 
+  https://github.com/rekihattori/awesome-programmers
+
   https://github.com/kdeldycke/awesome-falsehood 开发假话大全
 
   https://github.com/airen/DemoHouse
