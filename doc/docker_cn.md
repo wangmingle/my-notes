@@ -60,6 +60,9 @@ sudo service docker restart
 
   export TERM=dumb
 
+### 例子
+
+[mongo](/doc/db/mongo.md)
 
 ## 参考
 
@@ -77,3 +80,6 @@ I guess for now we are stuck with
 netstat -nr | grep '^0\.0\.0\.0' | awk '{print $2}'
 就是写hosts 然后直接访问就好了
 ```
+[连接/几个不同的容器组在一起](https://www.oschina.net/translate/dockerlinks)
+
+--link name:alias
