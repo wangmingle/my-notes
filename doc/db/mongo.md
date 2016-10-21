@@ -42,16 +42,22 @@ docker exec -it mongo mongo -u admin -p xxx test
 管理员
 ```
 mongo
+use admin
 db.system.users.find();
-db.addUser("test_user","password")
 
 db.createUser( { user: "admin",
                  pwd: "xxx",
-                 customData: { employeeId: 12345 },
-                 roles: [ { role: "clusterAdmin", db: "admin" },
-                          { role: "readAnyDatabase", db: "admin" },
-                          "readWrite"] },
+                 roles: [
+                  "root",
+                  "dbAdminAnyDatabase",
+                  "readWrite",
+                  "userAdminAnyDatabase",
+                  "readWriteAnyDatabase"] },
                { w: "majority" , wtimeout: 5000 } )
+db.system.users.find();
+# 提示没有权限
+db.auth("admin","xxx")
+db.system.users.remove({"user": "UdeskAdmin"})
 ```
 
 库权限
@@ -68,11 +74,13 @@ db.createUser(
    }
 )
 db.system.users.find();
-db.auth("test","xxx")
+db.auth("test","test1234")
 ```
 
-[参考](http://bubkoo.com/2014/02/07/mongodb-authentication/)
 [参考](https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/#create-a-user-defined-role)
+
+[角色](https://docs.mongodb.com/v3.2/reference/built-in-roles/#userAdminAnyDatabase)
+
 
 注:3.2 没有 db.addUser了
 
@@ -81,9 +89,6 @@ db.auth("test","xxx")
 db.createUser({user:"yearnfar",pwd:"123456",roles:[]})
 db.createUser({user:'ydkt',pwd:'ydkt',roles:['readWrite','dbAdmin']})
 ```
-
-TODO:  好像这个admin建立得权限不足
-
 
 ### 初始化脚本
 
@@ -393,7 +398,10 @@ MongoDB shell version: 2.4.8
 connecting to: test
 没有建admin,还是默认有超级用户权限
 
-# 在 admin 数据库中创建用户 supper，密码为 password
+
+### 在 admin 数据库中创建用户 supper，密码为 password
+
+```
 > use admin
 switched to db admin
 > db.addUser("supper","password")
@@ -403,6 +411,7 @@ switched to db admin
         "pwd" : "0d345bf64f4c1e8bc3e3bbb04c46b4d3",
         "_id" : ObjectId("52f5bdf439a90d49d27742d5")
 }
+```
 # 认证
 > db.auth("supper","password")
 1
