@@ -22,7 +22,7 @@ https://github.com/futantan/atom
 atom ~/.atom/snippets.cson
 
 
-
+apm install merge-conflicts
 
 
 快捷键
