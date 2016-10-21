@@ -11,6 +11,8 @@ DOCKER
 
 ### 使用国内镜像安装docker
 
+**QUICKTIP: 国内用户请放弃安装原版的docker**
+
 #### ubuntu
 
 您可以通过阿里云的镜像仓库下载： mirrors.aliyun.com/help/docker-engine
