@@ -33,6 +33,8 @@ docker exec -it mongo mongo -u admin -p xxx test
 
 --auth 在没有系统管理账号时不会生效
 
+如果用户建立得不对,可以去掉这个参数重启数据
+
 [参考](https://yeasy.gitbooks.io/docker_practice/content/appendix_repo/mongodb.html)
 
 ### get start
@@ -77,7 +79,9 @@ db.system.users.find();
 db.auth("test","test1234")
 ```
 
-[参考](https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/#create-a-user-defined-role)
+参考:
+
+[用户](https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/#create-a-user-defined-role)
 
 [角色](https://docs.mongodb.com/v3.2/reference/built-in-roles/#userAdminAnyDatabase)
 
