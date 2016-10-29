@@ -36,7 +36,7 @@ awesome
 
 ## awesome
 
-  https://github.com/rekihattori/awesome-programmers
+  https://github.com/rekihattori/awesome-programmers 关于程序员的故事
 
   https://github.com/kdeldycke/awesome-falsehood 开发假话大全
 
@@ -168,6 +168,7 @@ awesome
   http://gitless.com/#documentation
 
   https://github.com/noffle/art-of-readme
+  https://github.com/noffle/art-of-readme/blob/master/README-zh.md
 
   https://github.com/dempfi/ayu Modern Sublime Text 3 and 2 theme 看起一般
 
@@ -221,6 +222,8 @@ awesome
   https://github.com/codervault/codervault 在线管理snippet 的工具,好像还用上不
 
 ## JavaScript && css && JS
+
+  https://github.com/FormidableLabs/nodejs-dashboard js管理控制台
 
   https://github.com/mikeal/roll-call web p2p 语音聊天
 
@@ -422,7 +425,6 @@ awesome
   https://github.com/rzane/baby_squeel 不错的sql helper
 
   https://github.com/mwpastore/ioughta Helpers for defining Go-like constants and hashes in Ruby using iota
-
 
   https://github.com/jvns/ruby-stacktrace ruby跟踪工具
 
@@ -649,6 +651,12 @@ awesome
   https://github.com/krzysztofzablocki/KZFileWatchers 文件变更同步,看起来很厉害的样子
 
 ## 安全:
+  https://github.com/dirtycow/dirtycow.github.io 脏牛
+  http://bobao.360.cn/learning/detail/3123.html
+
+  https://github.com/jgamblin/Mirai-Source-Code DDOS 工具
+  https://krebsonsecurity.com/2016/10/source-code-for-iot-botnet-mirai-released/
+  http://bobao.360.cn/news/detail/3678.html
 
   https://github.com/pavel-odintsov/fastnetmon DDOS analysis
 
@@ -757,7 +765,3 @@ https://github.com/roberdam/Xaddress
   - David Silver以前所在的UCL的研究项目-研究蒙特卡洛搜索树在游戏中的应用，包含JAVA和Python的代码：http://mcts.ai/about/index.html
 
   - github上别人用theano实现的Alphago：https://github.com/Rochester-NRT/AlphaGo
-
-## Rust
-
-  https://github.com/servo/servo The Servo Browser Engine 太大,不看了

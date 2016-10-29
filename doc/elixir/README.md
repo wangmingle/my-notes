@@ -1,9 +1,9 @@
 Elixir lang
 -----
 
-### install 
+### install
 
-mac 
+mac
 
 brew install elixir
 
@@ -26,25 +26,25 @@ https://github.com/tonini/alchemist.el
 
 https://github.com/slashmili/alchemist.vim/wiki
 
-emacs 
+emacs
 
 ### phoenix
 
 http://www.phoenixframework.org
 
-#### install 
+#### install
 
   http://www.phoenixframework.org/docs/installation
-  
+
   mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
-  
+
   Plug, Cowboy, and Ecto
-  
-  
+
+
 #### quick start
-  
+
   pg
-  
+
   mix phoenix.new hello_phoenix
 
   We are all set! Run your Phoenix application:
@@ -59,22 +59,12 @@ http://www.phoenixframework.org
   Before moving on, configure your database in config/dev.exs and run:
 
       $ mix ecto.create
-      
+
   http://www.phoenixframework.org/docs/using-mysql
-  
+
   mix phoenix.new hello_phoenix --database mysql
-  
   
   mix ecto.create # db create
   mix ecto.migrate
-  
+
   mix phoenix.server
-  
-  
-  
-
-  
-  
-
-
-

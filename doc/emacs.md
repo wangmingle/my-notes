@@ -1,6 +1,8 @@
 emacs.md
 -----
-https://github.com/tonini/emacs.d
+
+
+放弃 ,做为一个 vim 的传人不要花时间去搞这个东西.
 
 git clone https://github.com/azhao1981/emacs.d.git ~/.emacs.d
 
@@ -17,10 +19,26 @@ https://github.com/nightire/dotfiles/blob/master/neovim.md 好的建议
 http://man.linuxde.net/emacs
 基本
 
-C-x C-c : 退出Emacs 
-C-x C-f : 打开一个文件，如果文件不存在，则创建一个文件 
+C-x C-c : 退出Emacs
+C-x C-f : 打开一个文件，如果文件不存在，则创建一个文件
 C-g : 取消未完成的命令
 C-x RET = M-x
+上下左右
+C-x C-s     保存当前缓冲区
+
+光标移动命令
+C-f         前进一个字符 forward
+C-b       后退一个字符 back
+C-p       上一行 pre
+C-n       下一行 next
+M-f       前进一个单词
+M-b     后退一个单词
+C-a       行首
+C-e       行尾
+C-v       下翻一页
+M-v      上翻一页
+M-<      文件头
+M->      文件尾
 
 Evil emacs 的vim模式
 
@@ -31,7 +49,8 @@ http://mazhuang.org/2015/05/10/emacs/#common-lisp-
 /************************************/
 基本命令
 C-x C-f      打开/新建文件
-C-x C-s     保存当前缓冲区
+
+
 C-x C-w    当前缓冲区另存为
 C-x C-v     关闭当前Buffer并打开新文件
 C-x i          光标处插入文件

@@ -4,11 +4,6 @@ phoenix
 
 
 
-
-
-
-
-
 ### 重构rails
 
 http://littlelines.com/blog/2016/09/27/using-phoenix-with-a-legagy-rails-app/

@@ -53,6 +53,11 @@ sudo service docker restart
 
   [Windows系统的安装文件目录](http://mirrors.aliyun.com/docker-toolbox/windows)
 
+### docker on rails 
+
+  https://blog.codeship.com/running-rails-development-environment-docker/
+
+  http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/
 
 ## FAQ
 

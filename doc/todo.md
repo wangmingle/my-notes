@@ -1,5 +1,23 @@
 TODO
 -----
+* sidekiq 性能
+
+https://github.com/Paxa/light_record
+https://blog.codeship.com/improving-rails-performance-better-background-jobs/?utm_source=rubyweekly&utm_medium=email
+https://hackernoon.com/speed-up-allocating-activerecord-objects-86c7ced839a5#.z3blhdl95
+
+* 使用api json做数据来源
+https://emberigniter.com/modern-bridge-ember-and-rails-5-with-json-api/?utm_source=rubyweekly&utm_medium=email
+
+
+* docker for rails
+
+https://blog.codeship.com/running-rails-development-environment-docker/
+
+http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/
+
+* 代码质量
+https://blog.codeship.com/good-module-bad-module/?utm_source=rubyweekly&utm_medium=email
 
 * http://mp.weixin.qq.com/s?__biz=MjM5OTcxMzE0MQ%3D%3D&mid=2653369770&idx=1&sn=044be64c577a11a9a13447b373e80082&chksm=bce4d5b08b935ca6ad59abb5cc733a341a5126fefc0e6600bd61c959969c5f77c95fbfb909e3&mpshare=1&scene=1&srcid=1008yASawJoqT3FVd0IhPQYm
 使用Go语言每分钟处理1百万请求

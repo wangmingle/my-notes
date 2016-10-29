@@ -50,6 +50,10 @@ grep -rl 'http://imdev.udeskmonkey.com:5880/http-bind/' config/property/*.yml | 
 
 
 grep -rl 'http://v3.faqrobot.org/' config/property/*.yml | xargs sed -i '' 's/http\:\/\/v3.faqrobot.org\//http\:\/\/udesk.faqrobot.org\//g'
+
+grep -rl 'im_v4:' config/property/*.yml | xargs sed -i '' "s/im_v4:/vistor_server: http:\/\/localhost:6001\/\nim_v4:/g"
+
+grep -rl 'localhost:6001' config/property/server.*.yml | xargs sed -i '' 's/vistor_server: http:\/\/localhost:6001\//g'
 ```
 
 ### 使用im的公司排序

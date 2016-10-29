@@ -1,13 +1,26 @@
 sublime
 ----
 
+### 不打开历史文件
 
-http://xclient.info/s/sublime-text.html
 
-xclient.info
+  https://www.douban.com/group/topic/35139258/
 
+  打开 Settings--User
+
+  ```json
+    {
+      "hot_exit": false,
+      "remember_open_files": false,
+    }
+  ```
+
+### SN
+
+下官网文件,用sn就可以
 
 最新3124能用
+```
 —– BEGIN LICENSE —–
 Michael Barnes
 Single User License
@@ -77,3 +90,4 @@ E585BBA1 2538C270 E2E857C2 194283CA
 63909E12 203C0169 3F08FFC8 86D06EA8
 73DDAEF0 AC559F30 A6A67947 B60104C6
 —— END LICENSE ——
+```
