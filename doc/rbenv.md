@@ -40,7 +40,7 @@ gem install puma -v 2.8.2 -- --with-opt-dir=/usr/local/opt/openssl
 
 gem install nokogiri -v '1.6.3.1'
 
-brew install libxml2 
+brew install libxml2
 brew install libxslt
 brew install homebrew/dupes/libiconv
 
@@ -64,6 +64,12 @@ dont do :
 
 2) mysql -uroot
 
+$ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+$ gem sources -l
+*** CURRENT SOURCES ***
 
+https://gems.ruby-china.org
+# 请确保只有 gems.ruby-china.org
+$ gem install rails
 
-
+$ bundle config mirror.https://rubygems.org https://gems.ruby-china.org

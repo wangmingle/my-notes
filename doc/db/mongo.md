@@ -297,6 +297,9 @@ list.forEach(function(x){
 var single=db.person.find().sort({"name",1}).skip(2).limit(2);
 ? 2016-10-06T23:31:54.756+0800 E QUERY    [thread1] SyntaxError: missing : after property id @(shell):1:40
 
+#### 主从
+
+http://gong1208.iteye.com/blog/1558355
 
 #### 那些坑:
 

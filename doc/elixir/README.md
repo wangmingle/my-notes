@@ -10,6 +10,21 @@ brew install elixir
 
 elixir -v
 
+### sublime
+
+elixir
+elixir playground
+elixirSublime 不要装这个SB插件,会把 shift + 左键 改了
+
+
+### ejabberd
+
+[编译](https://docs.ejabberd.im/developer/extending-ejabberd/elixir/)
+
+https://blog.process-one.net/elixir-sips-ejabberd-with-elixir-part-1/
+https://blog.process-one.net/ejabberd-joins-the-elixir-revolution/
+
+
 ### 教程
 
 https://github.com/elixir-lang-china/elixir_guide_cn/
@@ -63,7 +78,7 @@ http://www.phoenixframework.org
   http://www.phoenixframework.org/docs/using-mysql
 
   mix phoenix.new hello_phoenix --database mysql
-  
+
   mix ecto.create # db create
   mix ecto.migrate
 

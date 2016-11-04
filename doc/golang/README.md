@@ -1,5 +1,22 @@
 README - Golang
 -----
+
+### 字符串
+
+http://www.cnblogs.com/golove/p/3262925.html
+
+### CHINA
+https://github.com/gpmgo/gopm
+https://github.com/gpmgo/docs/blob/master/zh-CN/README.md
+
+### best
+https://peter.bourgon.org/go-in-production/
+https://peter.bourgon.org/go-best-practices-2016/#development-environment
+
+### docker
+
+https://dev.aliyun.com/detail.html?spm=5176.1972343.2.6.jIhoPS&repoId=1215
+
 ### 开发环境
 
 https://segmentfault.com/a/1190000002586255

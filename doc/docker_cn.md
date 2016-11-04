@@ -53,7 +53,7 @@ sudo service docker restart
 
   [Windows系统的安装文件目录](http://mirrors.aliyun.com/docker-toolbox/windows)
 
-### docker on rails 
+### docker on rails
 
   https://blog.codeship.com/running-rails-development-environment-docker/
 
@@ -78,6 +78,8 @@ sudo service docker restart
 [alicloudhpc/toolkit 阿里云深度学习](https://dev.aliyun.com/detail.html?spm=5176.100208.8.2.VSKcdu&repoId=2)
 
 [mac下访问宿主机端口](https://github.com/docker/docker/issues/1143)
+
+[Dockfile with ruby](https://github.com/erikh/box)
 
 ```
 Docker auto updating /etc/hosts on every container with the host IP, e.g. 172.17.42.1 and calling it for example dockerhost would be a convenient fix.
