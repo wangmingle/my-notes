@@ -1,5 +1,10 @@
 TODO
 -----
+
+* changeLog
+
+http://keepachangelog.com/zh-CN/0.3.0/
+
 * sidekiq 性能
 
 https://github.com/Paxa/light_record

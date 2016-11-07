@@ -15,7 +15,12 @@ https://github.com/kemayo/sublime-text-git/wiki
   如果用matching,会出现把所有的本地与origin名字相同的都上推,如果一担用了git push -f 会强推覆盖,造成不想要的结果
 π
   最好用 current
+### 忽略已经提交的文件
 
+https://segmentfault.com/q/1010000000430426
+
+git rm --cached logs/xx.log，然后更新 .gitignore
+commit
 ### 删除远程分支
 
 ```shell

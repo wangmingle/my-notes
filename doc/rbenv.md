@@ -18,7 +18,7 @@ apt-get install libreadline-dev -y
 
 rbenv install 2.1.1
 
-rbenv install 2.4.0
+rbenv install 2.3.0
 
 rbenv global 2.3.0
 

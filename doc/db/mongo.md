@@ -1,13 +1,22 @@
 mongo.md
 ----
 
+### 文档
+
+[中文](http://www.runoob.com/mongodb/mongodb-tutorial.html)
+
+### ubuntu 安装
+
+[doc](https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/)
+apt-get install mongodb-org
+
 ### docker 安装
 
 mkdir -p mongo/db
 
 docker pull mongo:3.2.10
 
-https://dev.aliyun.com/detail.html?spm=5176.1972343.2.2.u6lXOV&repoId=1237
+https://dev.aliyun.com/detail.hmongotml?spm=5176.1972343.2.2.u6lXOV&repoId=1237
 
 试`docker run -p 27017:27017 -v $PWD/db:/data/db -d mongo:3.2.10`
 
@@ -48,7 +57,7 @@ use admin
 db.system.users.find();
 
 db.createUser( { user: "admin",
-                 pwd: "xxx",
+                 pwd: "udesk765432",
                  roles: [
                   "root",
                   "dbAdminAnyDatabase",
@@ -425,3 +434,15 @@ switched to db admin
 >
 
 mongo 127.0.0.1/admin -usupper -ppassword
+
+[多表查询](http://qianxunniao.iteye.com/blog/1776313)
+
+[connection-string/主从](https://docs.mongodb.com/manual/reference/connection-string/)
+
+[索引](http://www.mongoing.com/archives/2797)
+
+http://www.yl-blog.com/article/482.html
+
+http://eksliang.iteye.com/blog/2178555
+
+https://www.oschina.net/translate/mongodb-indexing-tip-3-too-many-fields-to-index-use
