@@ -69,6 +69,10 @@ sudo service docker restart
 
 [mongo](/doc/db/mongo.md)
 
+[docker上跑rails开发环境](https://blog.codeship.com/running-rails-development-environment-docker/)
+
+[建立rails的docker开发环境](http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/)
+
 ## 参考
 
 [最完整的Docker聖經(文中书)](https://joshhu.gitbooks.io/docker_theory_install/content/)
@@ -80,6 +84,8 @@ sudo service docker restart
 [mac下访问宿主机端口](https://github.com/docker/docker/issues/1143)
 
 [Dockfile with ruby](https://github.com/erikh/box)
+
+如何访问宿主机
 
 ```
 Docker auto updating /etc/hosts on every container with the host IP, e.g. 172.17.42.1 and calling it for example dockerhost would be a convenient fix.

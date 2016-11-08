@@ -17,9 +17,6 @@ https://emberigniter.com/modern-bridge-ember-and-rails-5-with-json-api/?utm_sour
 
 * docker for rails
 
-https://blog.codeship.com/running-rails-development-environment-docker/
-
-http://jes.al/2016/09/setting-up-a-rails-development-environment-using-docker/
 
 * 代码质量
 https://blog.codeship.com/good-module-bad-module/?utm_source=rubyweekly&utm_medium=email

@@ -2,7 +2,7 @@
 
 [python](doc/python/readme.md)
 
-[docker](doc/docker_cn.md)
+[docker in china](doc/docker_cn.md)
 
 [atom](doc/atom.md)
 
