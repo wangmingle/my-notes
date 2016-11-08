@@ -87,7 +87,26 @@ db.createUser(
 db.system.users.find();
 db.auth("test","test1234")
 ```
+### 常见查询方法
+```
+# 查询最后一条
+db.online.find({"company_code": "d66b21h"}).sort({'created_at': -1}).limit(1)
 
+# 排名统计
+db.online.aggregate(
+   [
+      {
+        $group : {
+           _id : "$company_code",
+           count: { $sum: 1 }
+        }
+      },
+      {
+        $sort:{count: -1}
+      }
+   ]
+)
+```
 参考:
 
 [用户](https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/#create-a-user-defined-role)
@@ -134,7 +153,67 @@ db.message.ensureIndex({display_id:1}); //在当前数据库中的message集合�
 
 https://github.com/paralect/robomongo
 
+### group and count
 
+https://docs.mongodb.com/v3.2/reference/operator/aggregation/group/
+```
+db.sales.insert({ "_id" : 1, "item" : "abc", "price" : 10, "quantity" : 2, "date" : ISODate("2014-03-01T08:00:00Z") })
+db.sales.insert({ "_id" : 2, "item" : "jkl", "price" : 20, "quantity" : 1, "date" : ISODate("2014-03-01T09:00:00Z") })
+db.sales.insert({ "_id" : 3, "item" : "xyz", "price" : 5, "quantity" : 10, "date" : ISODate("2014-03-15T09:00:00Z") })
+db.sales.insert({ "_id" : 4, "item" : "xyz", "price" : 5, "quantity" : 20, "date" : ISODate("2014-04-04T11:21:39.736Z") })
+db.sales.insert({ "_id" : 5, "item" : "abc", "price" : 10, "quantity" : 10, "date" : ISODate("2014-04-04T21:23:13.331Z") })
+
+db.sales.aggregate(
+   [
+      {
+        $group : {
+           _id : { month: { $month: "$date" }, day: { $dayOfMonth: "$date" }, year: { $year: "$date" } },
+           totalPrice: { $sum: { $multiply: [ "$price", "$quantity" ] } },
+           averageQuantity: { $avg: "$quantity" },
+           count: { $sum: 1 }
+        }
+      }
+   ]
+)
+
+db.online.aggregate(
+   [
+      {
+        $group : {
+           _id : "$company_code",
+           count: { $sum: 1 }
+        }
+      },
+      {
+        $sort:{count: -1}
+      }
+   ]
+)
+{ "_id" : "d66b21h", "count" : 3225 }
+{ "_id" : "d1i756e", "count" : 3015 }
+{ "_id" : "hbcekjj", "count" : 366 }
+{ "_id" : "12dgacd1", "count" : 363 }
+{ "_id" : "12i4e984", "count" : 350 }
+{ "_id" : "114gg25j", "count" : 322 }
+{ "_id" : "102eh1je", "count" : 289 }
+{ "_id" : "6b83c62", "count" : 216 }
+{ "_id" : "92cj1h4", "count" : 191 }
+{ "_id" : "e10e4fg", "count" : 186 }
+{ "_id" : "13b35akf", "count" : 181 }
+{ "_id" : "6be3hab", "count" : 174 }
+{ "_id" : "116ahcba", "count" : 167 }
+{ "_id" : "i3cfg26", "count" : 153 }
+{ "_id" : "13chha6e", "count" : 151 }
+{ "_id" : "1360bc2d", "count" : 131 }
+{ "_id" : "1730iggj", "count" : 125 }
+{ "_id" : "13ba5h18", "count" : 123 }
+{ "_id" : "8b789d0", "count" : 111 }
+{ "_id" : "d0b62", "count" : 93 }
+
+c = Company.find Company.code2i("d1i756e")
+c = Company.find Company.code2i("d66b21h")
+
+```
 ### 引用
 
 [8天学通MongoDB](http://www.cnblogs.com/huangxincheng/category/355399.html)
