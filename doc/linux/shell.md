@@ -1,6 +1,42 @@
 shell
 -----
 
+###
+
+### [2>&1 的含义](http://blog.csdn.net/ithomer/article/details/9288353)
+
+
+### 当前路径
+
+```
+## 在执行脚本中可以用
+cd `dirname $0`
+dir=`pwd`
+```
+
+```
+cat shell/a.sh
+#!/bin/bash
+echo '$0: '$0
+echo "pwd: "`pwd`
+echo "============================="
+echo "scriptPath1: "$(cd `dirname $0`; pwd)
+echo "scriptPath2: "$(pwd)
+echo "scriptPath3: "$(dirname $(readlink -f $0))
+echo "scriptPath4: "$(cd $(dirname ${BASH_SOURCE:-$0});pwd)
+echo -n "scriptPath5: " && dirname $(readlink -f ${BASH_SOURCE[0]})
+Jun@VAIO 192.168.1.216 23:53:17 ~ >
+bash shell/a.sh
+$0: shell/a.sh
+pwd: /home/Jun
+=============================
+scriptPath1: /home/Jun/shell
+scriptPath2: /home/Jun
+scriptPath3: /home/Jun/shell
+scriptPath4: /home/Jun/shell
+scriptPath5: /home/Jun/shell
+Jun@VAIO 192.168.1.216 23:54:54 ~ >
+```
 ### color
 
 http://misc.flogisoft.com/bash/tip_colors_and_formatting
@@ -54,10 +90,22 @@ grep -rl 'http://v3.faqrobot.org/' config/property/*.yml | xargs sed -i '' 's/ht
 grep -rl 'im_v4:' config/property/*.yml | xargs sed -i '' "s/im_v4:/vistor_server: http:\/\/localhost:6001\/\nim_v4:/g"
 
 grep -rl 'localhost:6001' config/property/server.*.yml | xargs sed -i '' 's/vistor_server: http:\/\/localhost:6001\//g'
+
+
+grep -rl 'github.com/googollee/go-engine.io' * | \
+xargs sed -i '' 's/github.com\/googollee\/go-engine.io/github.com\/azhao1981\/go-engine.io/g'
+
 ```
 
 ### 使用im的公司排序
 ```
+tower 上redis 问题查看
+netstat -na| grep -v 7001 | grep -v 7002 |grep 6379| grep ESTABLISHED | \
+ awk '{split($5,a,":" ); print a[1]}' | sort|uniq -c|sort -nr
+
+'{split($5,a,":" ); print a[1]}' # 把 $5 用 : 拆分放在a中. 取第一个
+'{split($4,a,":" ); print a[2]}' # 把 $5 用 : 拆分放在a中. 取第一个
+
 grep /api/v2/im/agent.json log/production.log | awk '{print $5}' |sort|uniq -c|sort -nr
 
 args tips
@@ -72,6 +120,8 @@ done
 ```
 
 ### vim 自动加可执行:
+
+
 ```
 vim ~/.vimrc
 au BufWritePost * if getline(1) =~ "^#!" | silent !chmod a+x <afile>

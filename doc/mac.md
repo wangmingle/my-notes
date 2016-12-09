@@ -15,7 +15,11 @@ http://xclient.info/s/os-x-server.html
 
 http://xclient.info/s/office-for-mac-2016.html
 
+http://xclient.info/s/scapple.html
+将 DMG 中的 Scapple.app 移动至 应用程序 文件夹。
+断网，打开 DMG 中的 CORE Keygen.app 左下角选择 Scapple v1，点击 Generate 将 Name 与生成的 Serial填入软件注册界面，点击注册按钮，在弹出来的选项框中选择最后一个 使用 act key 激活，然后填入 Act Key 安装成功，打开 网络。
 
+http://xclient.info/s/adobe-photoshop-cc.html
 
 Omnigraffle Pro 6
 

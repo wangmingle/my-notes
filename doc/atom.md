@@ -4,6 +4,36 @@ ruby 不能使用默认RoR
 
 https://atom.io/packages/file-types
 
+https://github.com/atom/keybinding-resolver
+cmd + . 造成的
+
+[纪要](http://www.jeffjade.com/2016/03/03/2016-03-02-how-to-use-atom/?fsg=)
+
+markdown-writer
+```
+快捷键操作	作用效果
+“shift-cmd-K”:	“markdown-writer : insert-link”
+“shift-cmd-I”:	“markdown-writer : insert-image”
+“cmd-i”:	“markdown-writer : toggle-italic-text”
+“cmd-b”:	“markdown-writer : toggle-bold-text”
+“cmd-‘“:	“markdown-writer : toggle-code-text”
+“cmd-k”:	“markdown-writer : toggle-keystroke-text”
+“cmd-h”:	“markdown-writer : toggle-strikethrough-text”
+“ctrl-alt-1”:	“markdown-writer : toggle-h1”
+“ctrl-alt-2”:	“markdown-writer : toggle-h2”
+“ctrl-alt-3”:	“markdown-writer : toggle-h3”
+“ctrl-alt-4”:	“markdown-writer : toggle-h4”
+“ctrl-alt-5”:	“markdown-writer : toggle-h5”
+“shift-cmd-O”:	“markdown-writer : toggle-ol”
+“shift-cmd-U”:	“markdown-writer : toggle-ul”
+“shift-cmd->”:	“markdown-writer : toggle-blockquote”
+‘shift-cmd-“‘:	“markdown-writer : toggle-codeblock-text”
+“cmd-j cmd-p”:	“markdown-writer : jump-to-previous-heading”
+“cmd-j cmd-n”:	“markdown-writer : jump-to-next-heading”
+“cmd-j cmd-d”:	“markdown-writer : jump-between-reference-definition”
+“cmd-j cmd-t”:	“markdown-writer : jump-to-next-table-cell”
+```
+
 开发插件
 
 http://www.jianshu.com/p/98f99c20493c

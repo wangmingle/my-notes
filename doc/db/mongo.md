@@ -8,7 +8,30 @@ mongo.md
 ### ubuntu 安装
 
 [doc](https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/)
-apt-get install mongodb-org
+
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+
+# Ubuntu 12.04
+echo "deb http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+# Ubuntu 14.04
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+# Ubuntu 16.04
+echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+sudo apt-get update
+
+sudo apt-get install mongodb-org
+# or
+sudo apt-get install -y mongodb-org=3.2.10 \
+  mongodb-org-server=3.2.10 \
+  mongodb-org-shell=3.2.10 \
+  mongodb-org-mongos=3.2.10 \
+  mongodb-org-tools=3.2.10
+
+```
 
 ### docker 安装
 
@@ -22,7 +45,7 @@ https://dev.aliyun.com/detail.hmongotml?spm=5176.1972343.2.2.u6lXOV&repoId=1237
 
 这个居然不是后台运行,改使用下面的脚本`run.sh`来运行
 
-```
+```bash
 #!/bin/bash
 NAME=mongo
 mkdir -p log
@@ -34,15 +57,18 @@ docker ps -a | grep Exited | awk '{print $1}' | xargs docker rm
 nohup docker run -p 27017:27017 -v $PWD/db:/data/db --name $NAME mongo:3.2.10 --auth > log/mongo.log &
 
 ```
-
+docker run -p 27017:27017 -v /srv/mongo/db:/data/db --name mongo mongo:3.2.10 --auth > log/mongo.log &
 命令行访问
+
 ```
 docker exec -it mongo mongo -u admin -p xxx test
 ```
 
 --auth 在没有系统管理账号时不会生效
 
-如果用户建立得不对,可以去掉这个参数重启数据
+注: `2.*` 版本客户端不能进入`3.*` 的服务器
+
+如果用户建立得不对,可以去掉这个参数`--auth`重启数据
 
 [参考](https://yeasy.gitbooks.io/docker_practice/content/appendix_repo/mongodb.html)
 
@@ -87,12 +113,23 @@ db.createUser(
 db.system.users.find();
 db.auth("test","test1234")
 ```
+
+更新用户权限
+
+```
+use admin
+db.system.users.find();
+
+```
+
 ### 常见查询方法
+
 ```
 # 查询最后一条
 db.online.find({"company_code": "d66b21h"}).sort({'created_at': -1}).limit(1)
 
 # 排名统计
+# https://docs.mongodb.com/v3.2/reference/operator/aggregation/group/
 db.online.aggregate(
    [
       {
@@ -115,12 +152,6 @@ db.online.aggregate(
 
 
 注:3.2 没有 db.addUser了
-
-必须用:
-```
-db.createUser({user:"yearnfar",pwd:"123456",roles:[]})
-db.createUser({user:'ydkt',pwd:'ydkt',roles:['readWrite','dbAdmin']})
-```
 
 ### 初始化脚本
 
@@ -153,79 +184,21 @@ db.message.ensureIndex({display_id:1}); //在当前数据库中的message集合�
 
 https://github.com/paralect/robomongo
 
-### group and count
-
-https://docs.mongodb.com/v3.2/reference/operator/aggregation/group/
-```
-db.sales.insert({ "_id" : 1, "item" : "abc", "price" : 10, "quantity" : 2, "date" : ISODate("2014-03-01T08:00:00Z") })
-db.sales.insert({ "_id" : 2, "item" : "jkl", "price" : 20, "quantity" : 1, "date" : ISODate("2014-03-01T09:00:00Z") })
-db.sales.insert({ "_id" : 3, "item" : "xyz", "price" : 5, "quantity" : 10, "date" : ISODate("2014-03-15T09:00:00Z") })
-db.sales.insert({ "_id" : 4, "item" : "xyz", "price" : 5, "quantity" : 20, "date" : ISODate("2014-04-04T11:21:39.736Z") })
-db.sales.insert({ "_id" : 5, "item" : "abc", "price" : 10, "quantity" : 10, "date" : ISODate("2014-04-04T21:23:13.331Z") })
-
-db.sales.aggregate(
-   [
-      {
-        $group : {
-           _id : { month: { $month: "$date" }, day: { $dayOfMonth: "$date" }, year: { $year: "$date" } },
-           totalPrice: { $sum: { $multiply: [ "$price", "$quantity" ] } },
-           averageQuantity: { $avg: "$quantity" },
-           count: { $sum: 1 }
-        }
-      }
-   ]
-)
-
-db.online.aggregate(
-   [
-      {
-        $group : {
-           _id : "$company_code",
-           count: { $sum: 1 }
-        }
-      },
-      {
-        $sort:{count: -1}
-      }
-   ]
-)
-{ "_id" : "d66b21h", "count" : 3225 }
-{ "_id" : "d1i756e", "count" : 3015 }
-{ "_id" : "hbcekjj", "count" : 366 }
-{ "_id" : "12dgacd1", "count" : 363 }
-{ "_id" : "12i4e984", "count" : 350 }
-{ "_id" : "114gg25j", "count" : 322 }
-{ "_id" : "102eh1je", "count" : 289 }
-{ "_id" : "6b83c62", "count" : 216 }
-{ "_id" : "92cj1h4", "count" : 191 }
-{ "_id" : "e10e4fg", "count" : 186 }
-{ "_id" : "13b35akf", "count" : 181 }
-{ "_id" : "6be3hab", "count" : 174 }
-{ "_id" : "116ahcba", "count" : 167 }
-{ "_id" : "i3cfg26", "count" : 153 }
-{ "_id" : "13chha6e", "count" : 151 }
-{ "_id" : "1360bc2d", "count" : 131 }
-{ "_id" : "1730iggj", "count" : 125 }
-{ "_id" : "13ba5h18", "count" : 123 }
-{ "_id" : "8b789d0", "count" : 111 }
-{ "_id" : "d0b62", "count" : 93 }
-
-c = Company.find Company.code2i("d1i756e")
-c = Company.find Company.code2i("d66b21h")
-
-```
 ### 引用
 
 [8天学通MongoDB](http://www.cnblogs.com/huangxincheng/category/355399.html)
 
 数据库，集合，文档
+
   collections -> tables
+
   documents -> row
 
 ```
 db.person.insert({"name": "weizhao","age": 35});
 db.person.find();
 ```
+
 `>, >=, <, <=, !=, =`
 
 $gt", "$gte", "$lt", "$lte", "$ne", "没有特殊关键字"
@@ -233,15 +206,19 @@ $gt", "$gte", "$lt", "$lte", "$ne", "没有特殊关键字"
 `db.person.find({"age":{$gt:32}});``
 
 And，OR，In，NotIn
+
 "无关键字“, "$or", "$in"，"$nin"
 
 正则
+
 `db.person.find({"name":/^w/, "name":/o$/});``
 
 where
+
 `db.person.find({$where:function(){ return this.name == 'weizhao'}});`
 
 update:
+
 ```
 var model=db.person.findOne({"name": "weizhao"});
 model.age = 36
@@ -256,6 +233,7 @@ $inc修改器
    $inc也就是increase的缩写，在原有的基础上 自增$inc指定的值，如果“文档”中没有此key，则会创建key，下面的例子一看就懂。
 
    加数,或由 0 加
+
 ```   
  db.person.update({"name": "weizhao"}, {$inc: {"worktime": 14}} )
 ```
@@ -377,35 +355,34 @@ db.collection.find()
 
 $ 游标
 
+```
 var list=db.person.find();
 for / next()
 list.forEach(function(x){
 	print(x.name);
 })
 var single=db.person.find().sort({"name",1}).skip(2).limit(2);
-? 2016-10-06T23:31:54.756+0800 E QUERY    [thread1] SyntaxError: missing : after property id @(shell):1:40
+```
 
 #### 主从
 
 http://gong1208.iteye.com/blog/1558355
 
-#### 那些坑:
+#### 一些坑:
 
 https://ruby-china.org/topics/20128
 
-主要是锁的问题
-
-如果有,必须是写原始库 读一个库
-
-别的小坑
+锁的问题
 
 http://www.jianshu.com/p/13c6a6cf903d
 
-补充: 1. 过高的内存占用   116G数据   占用32G内存跑满
+补充:
+
+1. 过高的内存占用   116G数据   占用32G内存跑满
 
 2. 在内存不足的时候如不使用安全模式,大量导入数据时会随机丢数据
 
-skip 太慢
+3. skip 太慢
 
 因为文档型数据的长度是不定的，所以其实并没有字节偏移量这种方便的东西。当你 skip(N) 的时候，这其实是一个 O(N) 的计算。可能一百以内感觉还不明显，成千上万以后延迟就已经肉眼可见了。
 
@@ -413,13 +390,9 @@ skip 太慢
 
 没有事务
 
-天坑啊。
-
 虽然官方给出了一个名为 两步提交（two phase commit） 的替代方案，但比较麻烦。有事务需求的时候建议还是用支持原生事务的数据库替代。
 
 [map-reduce](http://www.cnblogs.com/shanpow/p/4169773.html)
-
-
 
 [内存](http://huoding.com/2011/08/19/107)
 
@@ -435,84 +408,11 @@ https://www.v2ex.com/t/104230
 
 著名的`带条件的count()`慢到爆浆？
 
-由于JS引擎的原因，精度很疼
+由于JS引擎的原因，精度有问题
 
 https://github.com/Tokutek/mongo
+
 http://www.infoq.com/cn/news/2014/11/tokutek-tokudb-7-5-tokumx-2-0
-
-db.person.insert({"name": "韦昭", "age": 36})
-db.person.find()
-
-db.test1_data.insert({"id":1,"info":"I am in test1"})
-
-show dbs
-use admin
-
-db.system.users.find(); # 默认 admin 数据库中不存在用户
-```
-> use test
-switched to db test
-> db.system.users.find(); # 默认 test 数据库中也不存在用户
-> db.test_data.insert({"id":1,"info":"I am in test"})
-> db.test_data.insert({"id":2,"info":"I am in test"})
-> db.test_data.insert({"id":3,"info":"I am in test"})
-> db.test_data.find()
-{ "_id" : ObjectId("52f5922125d9e18cd51581b6"), "id" : 1, "info" : "I am in test" }
-{ "_id" : ObjectId("52f5926d25d9e18cd51581b7"), "id" : 2, "info" : "I am in test" }
-{ "_id" : ObjectId("52f5927125d9e18cd51581b8"), "id" : 3, "info" : "I am in test" }
-# 创建用户
-> db.addUser("test_user","password")
-{
-        "user" : "test_user",
-        "readOnly" : false,
-        "pwd" : "bf7a0adf9822a3379d6dfb1ebd38b92e",
-        "_id" : ObjectId("52f5928625d9e18cd51581b9")
-}
-> db.system.users.find()
-{ "_id" : ObjectId("52f5928625d9e18cd51581b9"), "user" : "test_user", "readOnly" : false,
-pwd" : "bf7a0adf9822a3379d6dfb1ebd38b92e" }
-# 验证函数，验证数据库中是否存在对应的用户
-> db.auth("test_user","password")
-use test1
-switched to db test1
-> db.test1_data.insert({"id":1,"info":"I am in test1"})
-> db.test1_data.insert({"id":2,"info":"I am in test1"})
-> db.test1_data.insert({"id":3,"info":"I am in test1"})
-> db.test1_data.find()
-{ "_id" : ObjectId("52f593e925d9e18cd51581ba"), "id" : 1, "info" : "I am in test1" }
-{ "_id" : ObjectId("52f593ef25d9e18cd51581bb"), "id" : 2, "info" : "I am in test1" }
-{ "_id" : ObjectId("52f593f425d9e18cd51581bc"), "id" : 3, "info" : "I am in test1" }
-```
-
-
-D:\MongoDB\mongodb-2.4.8>.\bin\mongod --dbpath=.\data --logpath=.\log\log.log --auth
-重新以认证的方式启动数据库，启动时添加 –auth 参数
-
-mongo
-MongoDB shell version: 2.4.8
-connecting to: test
-没有建admin,还是默认有超级用户权限
-
-
-### 在 admin 数据库中创建用户 supper，密码为 password
-
-```
-> use admin
-switched to db admin
-> db.addUser("supper","password")
-{
-        "user" : "supper",
-        "readOnly" : false,
-        "pwd" : "0d345bf64f4c1e8bc3e3bbb04c46b4d3",
-        "_id" : ObjectId("52f5bdf439a90d49d27742d5")
-}
-```
-# 认证
-> db.auth("supper","password")
-1
->
-
-mongo 127.0.0.1/admin -usupper -ppassword
 
 [多表查询](http://qianxunniao.iteye.com/blog/1776313)
 

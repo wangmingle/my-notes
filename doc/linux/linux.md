@@ -1,10 +1,18 @@
 linux
 ----
+### 查看版本
 
-DNS:
-  202.106.46.151
-  119.57.112.250
-  119.57.112.254
-  192.168.1.1
+`cat /etc/issue`
 
-  ping jira.flyudesk.com
+### 交换分区
+
+  ```
+  dd if=/dev/zero of=/tmp/swap bs=1MB count=8192
+  swap:
+  1、使用命令：dd if=/dev/zero of=/tmp/swap bs=1MB count=1024增加1G的swap空间。
+  2、使用 mkswap /tmp/swap 命令制作一个swap文件。
+  3、使用 swapon /tmp/swap 命令启动swap分区。
+  注意：此操作只对当前有效，重启服务器后失效。如果想持续保持。可以将其写入/etc/fstab文件中。
+  vim /etc/fstab
+  /tmp/swap                                       swap    defaults        0 0
+  ```

@@ -1,5 +1,10 @@
 TODO
+
 -----
+
+* http://www.rubypigeon.com/posts/fizzbuzz-in-too-much-detail/?utm_source=rubyweekly&utm_medium=email
+fizzbuzz
+* https://webdesign.tutsplus.com/tutorials/how-to-create-and-publish-a-jekyll-theme-gem--cms-27475
 
 * changeLog
 

@@ -76,3 +76,8 @@ innodb_file_format=barracuda
 
 
 https://www.pureweber.com/article/myisam-vs-innodb/
+
+
+use information_schema;
+SELECT TABLE_NAME,DATA_LENGTH+INDEX_LENGTH,TABLE_ROWS FROM TABLES WHERE TABLE_SCHEMA='udesk_im_ejabberd';
+ AND TABLE_NAME='表名'

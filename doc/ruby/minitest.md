@@ -1,8 +1,15 @@
 minitest.md
 ----
 
+### 集成测试
 
-```ruby 
+[文档](http://doc.bccnsoft.com/docs/rails-guides-4.1-cn/testing.html#%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95)
+
+rails generate integration_test im_pre_form
+
+#### tip
+
+```ruby
 
 # Runs all tests before Ruby exits, using `Kernel#at_exit`.
 require 'minitest/autorun'

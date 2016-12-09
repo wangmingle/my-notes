@@ -32,10 +32,16 @@ make && make install
 
 adduser webuser
 passwd -d webuser
-/etc/sudoers
-webuser ALL=(ALL) NOPASSWD:ALL
+chmod +w  /etc/sudoers
+production
+echo "webuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+production
+echo "webuser ALL=(ALL:ALL) ALL " >> /etc/sudoers
+chmod 0440 /etc/sudoers
 没成功
-chown -R webuser:webuser /home/webuser/.ssh
+mkdir /home/webuser/.ssh \
+&& touch /home/webuser/.ssh/authorized_keys \
+&& chown -R webuser:webuser /home/webuser/.ssh
 chmod 0700 /home/webuser/.ssh
 chmod 0600 /home/webuser/.ssh/authorized_keys
 

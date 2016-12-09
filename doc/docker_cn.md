@@ -9,6 +9,10 @@ DOCKER
 * 没有权限烦恼
 * 漏洞攻击影响小,保护宿主机
 
+### 坑
+
+* 最大的坑就是坑爹的 iso out to date, 然后后你升级,发现所有的镜像都没有了,因为在老的镜像里
+
 ### 使用国内镜像安装docker
 
 **QUICKTIP: 国内用户请放弃安装原版的docker**
@@ -39,6 +43,7 @@ sudo service docker restart
   # 创建一台安装有Docker环境的Linux虚拟机，指定机器名称为default，同时配置Docker加速器地址。
   ```
   docker-machine create --engine-registry-mirror=https://j90112tg.mirror.aliyuncs.com -d virtualbox default
+  docker-machine provision --engine-registry-mirror=https://j90112tg.mirror.aliyuncs.com -d virtualbox default
   ```
 
   # 查看机器的环境配置，并配置到本地。然后通过Docker客户端访问Docker服务。
@@ -84,6 +89,8 @@ sudo service docker restart
 [mac下访问宿主机端口](https://github.com/docker/docker/issues/1143)
 
 [Dockfile with ruby](https://github.com/erikh/box)
+
+[docker入门到实践](https://www.gitbook.com/book/yeasy/docker_practice/details)
 
 如何访问宿主机
 
